@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>polygon_cuts.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline28</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline560</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline280</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline56</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline11">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline26</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline44</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline48</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline23</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline15">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline16">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline18">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline51</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline20">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline21">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline38</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline23">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline24">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline25">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline26">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline27">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline28">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline280">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline29">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline30">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline31">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline59</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline32">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline33">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline34">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline35">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline36">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline32</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline37">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline38">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline39">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline40">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline25</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline21</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline42">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline43">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline44">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline45">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline46">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline43</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline35</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline47">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline48">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline49">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline42</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline29</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline51">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline52">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline53">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline54">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline55">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline34</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline54</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline56">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline560">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline57">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline37</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline58">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline53</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline59">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline6">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline60">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline61">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline33</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline45</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>polygon_cuts</name>
+		<open>1</open>
+		<Placemark>
+			<name>1</name>
+			<styleUrl>#inline7</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7121490566049,-25.34638176098352,0 130.7134227288208,-25.34688054152616,0 130.7153033753066,-25.34654020937043,0 130.7161108394724,-25.34667071879283,0 130.7175431104175,-25.34634339354535,0 130.7178180372099,-25.34529988359904,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<styleUrl>#inline52</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7129587425467,-25.34705028965513,0 130.7149367016677,-25.34697697768546,0 130.7174780693288,-25.3467104132897,0 130.7178318059702,-25.34629478351162,0 130.7184821165342,-25.34504092394035,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<styleUrl>#inline3</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7129532692333,-25.34723595059248,0 130.713996019205,-25.34737055102726,0 130.7146870157595,-25.34743697375074,0 130.7155941246371,-25.34729562989245,0 130.718259870387,-25.3465596297612,0 130.7189570556173,-25.34575576016768,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<styleUrl>#inline50</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7129208279368,-25.34735712927654,0 130.7130196655005,-25.3473811826325,0 130.7130845015409,-25.34740445500223,0 130.7144844452418,-25.34769877928784,0 130.7149586134477,-25.34786369080066,0 130.7161150618703,-25.34831898093343,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>5</name>
+			<styleUrl>#inline36</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7130424607391,-25.34777586373802,0 130.7161739450245,-25.34858633418258,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>6</name>
+			<styleUrl>#inline55</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7123789434247,-25.34760020642141,0 130.7145254561383,-25.34867316561039,0 130.7150875574013,-25.34861676289336,0 130.7158732869503,-25.3488027484908,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>7</name>
+			<styleUrl>#inline13</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7152584583301,-25.35003213486646,0 130.7142626502825,-25.34903888248023,0 130.7138900348257,-25.348806146289,0 130.7133335627896,-25.34851418396894,0 130.7125963572648,-25.34816182795834,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>8</name>
+			<styleUrl>#inline46</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7151129195013,-25.35136699808708,0 130.7146121083653,-25.35000641818618,0 130.7140595234961,-25.3493890057211,0 130.7135953543666,-25.34916388368065,0 130.7133455872956,-25.34914237701593,0 130.7126949656655,-25.34874095503301,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<styleUrl>#inline19</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7117109609752,-25.34931553062468,0 130.7138040723027,-25.34986467027136,0 130.7149368566593,-25.35158702567212,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>10</name>
+			<styleUrl>#inline61</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7122300488864,-25.349907232707,0 130.713469736293,-25.3501541234169,0 130.7146348209129,-25.35157821120315,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>11</name>
+			<styleUrl>#inline47</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7116277456569,-25.3502291730864,0 130.7132098577745,-25.35064782877814,0 130.7147102512682,-25.35226073223286,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>12</name>
+			<styleUrl>#inline14</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7113769536011,-25.35058747247269,0 130.7114289531413,-25.35061294762554,0 130.7131022514762,-25.35119031881606,0 130.7145837196596,-25.35251435829504,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>13</name>
+			<styleUrl>#inline57</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7114914370506,-25.35120168098196,0 130.711515539948,-25.35120158676219,0 130.7129874251418,-25.35159995735508,0 130.7146652898495,-25.35286114235366,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>14</name>
+			<styleUrl>#inline58</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7116628325266,-25.35165687515805,0 130.7127957422415,-25.3520247498224,0 130.7139861376,-25.35262378491848,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>15</name>
+			<styleUrl>#inline39</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7110561372964,-25.35225416527216,0 130.7126524944389,-25.35267091366495,0 130.7140303320545,-25.35355301841022,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>16</name>
+			<styleUrl>#inline31</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7110507765513,-25.35266453946198,0 130.7125180169563,-25.35306457880634,0 130.7135368708755,-25.3536663057437,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>17</name>
+			<styleUrl>#inline12</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7110432331862,-25.35304991584437,0 130.7123160856996,-25.35343685390098,0 130.7133369999994,-25.35405340105994,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>18</name>
+			<styleUrl>#inline49</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7110145271739,-25.35349686156045,0 130.7130614730422,-25.35429635686375,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>19</name>
+			<styleUrl>#inline22</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7109989764721,-25.35398569681151,0 130.7125182744165,-25.35459672342353,0 130.7134866474518,-25.35462847423569,0 130.7137060567992,-25.35442957816471,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>20</name>
+			<styleUrl>#inline41</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.710657013986,-25.35420120621441,0 130.7118453662114,-25.35471052664273,0 130.7139452830768,-25.35478785912806,0 130.7142610339228,-25.35450783647989,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>21</name>
+			<styleUrl>#inline0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7122386070095,-25.35466101778704,0 130.7120169726686,-25.35546859843844,0 130.7112030210628,-25.35622568179668,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>22</name>
+			<styleUrl>#inline00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					130.7159106821796,-25.3441282246424,0 130.7156488065815,-25.3452531561175,0 130.7163956413288,-25.34852869464423,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

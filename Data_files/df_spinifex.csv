@@ -1,0 +1,360 @@
+user,timestamp,imagefile,species,veg_layer,percentage_cover,geometry,dead_cover,live_cover
+Guest_Person,##------ Tue Feb  7 14:22:43 2023 ------##,20220807_143317_GS010324_Frame_000065_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7133 -25.35219),0,3.5
+Guest_Person,##------ Tue Feb  7 14:22:43 2023 ------##,20220807_143317_GS010324_Frame_000065_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7133 -25.35219),0,3.5
+Guest_Person,##------ Tue Feb  7 14:31:25 2023 ------##,20220807_143317_GS010324_Frame_000080_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7132 -25.35202),0,7.5
+Guest_Person,##------ Tue Feb  7 14:31:25 2023 ------##,20220807_143317_GS010324_Frame_000080_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7132 -25.35202),0.1875,7.3125
+Guest_Person,##------ Wed Feb  8 15:04:00 2023 ------##,20220807_143317_GS010324_Frame_000112_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7131 -25.35168),0,3.5
+Guest_Person,##------ Wed Feb  8 15:04:00 2023 ------##,20220807_143317_GS010324_Frame_000112_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7131 -25.35168),0.1875,7.3125
+Guest_Person,##------ Wed Feb  8 15:08:22 2023 ------##,20220807_143317_GS010324_Frame_000144_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7132 -25.35133),0,3.5
+Guest_Person,##------ Wed Feb  8 15:08:22 2023 ------##,20220807_143317_GS010324_Frame_000144_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7132 -25.35133),0,15
+Guest_Person,##------ Wed Feb  8 15:10:15 2023 ------##,20220807_143317_GS010324_Frame_000160_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7133 -25.35115),0.1875,7.3125
+Guest_Person,##------ Wed Feb  8 15:10:15 2023 ------##,20220807_143317_GS010324_Frame_000160_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7133 -25.35115),0,7.5
+Guest_Person,##------ Wed Feb  8 15:11:45 2023 ------##,20220807_143317_GS010324_Frame_000177_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7133 -25.35097),0.1875,7.3125
+Guest_Person,##------ Wed Feb  8 15:11:45 2023 ------##,20220807_143317_GS010324_Frame_000177_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7133 -25.35097),0,7.5
+Guest_Person,##------ Wed Feb  8 15:14:36 2023 ------##,20220807_143317_GS010324_Frame_000209_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7134 -25.35061),0,3.5
+Guest_Person,##------ Wed Feb  8 15:14:36 2023 ------##,20220807_143317_GS010324_Frame_000209_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7134 -25.35061),0,15
+Guest_Person,##------ Wed Feb  8 15:16:04 2023 ------##,20220807_143317_GS010324_Frame_000229_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7135 -25.35046),0,1
+Guest_Person,##------ Wed Feb  8 15:16:04 2023 ------##,20220807_143317_GS010324_Frame_000229_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7135 -25.35046),0,7.5
+Guest_Person,##------ Wed Feb  8 15:17:53 2023 ------##,20220807_143317_GS010324_Frame_000249_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7137 -25.35034),0,7.5
+Guest_Person,##------ Wed Feb  8 15:17:53 2023 ------##,20220807_143317_GS010324_Frame_000249_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7137 -25.35034),0,3.5
+Guest_Person,##------ Wed Feb  8 15:19:40 2023 ------##,20220807_143317_GS010324_Frame_000262_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7137 -25.35016),0.4375,3.0625
+Guest_Person,##------ Wed Feb  8 15:19:40 2023 ------##,20220807_143317_GS010324_Frame_000262_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,3.5,POINT (130.7137 -25.35016),0,3.5
+Guest_Person,##------ Wed Feb  8 15:21:06 2023 ------##,20220807_143317_GS010324_Frame_000276_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7138 -25.35),0,7.5
+Guest_Person,##------ Wed Feb  8 15:21:07 2023 ------##,20220807_143317_GS010324_Frame_000276_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,1,POINT (130.7138 -25.35),0,1
+Guest_Person,##------ Wed Feb  8 15:22:21 2023 ------##,20220807_143317_GS010324_Frame_000291_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7139 -25.34983),0.0875,3.4125
+Guest_Person,##------ Wed Feb  8 15:22:21 2023 ------##,20220807_143317_GS010324_Frame_000291_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7139 -25.34983),0,3.5
+Guest_Person,##------ Wed Feb  8 15:24:04 2023 ------##,20220807_143317_GS010324_Frame_000306_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.714 -25.34966),0,3.5
+Guest_Person,##------ Wed Feb  8 15:24:04 2023 ------##,20220807_143317_GS010324_Frame_000306_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,15,POINT (130.714 -25.34966),0,15
+Guest_Person,##------ Wed Feb  8 15:25:26 2023 ------##,20220807_143317_GS010324_Frame_000320_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7141 -25.3495),0,3.5
+Guest_Person,##------ Wed Feb  8 15:25:26 2023 ------##,20220807_143317_GS010324_Frame_000320_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,25,POINT (130.7141 -25.3495),0,25
+Guest_Person,##------ Wed Feb  8 15:30:34 2023 ------##,20220807_143317_GS010324_Frame_000357_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7143 -25.34916),0,3.5
+Guest_Person,##------ Wed Feb  8 15:30:34 2023 ------##,20220807_143317_GS010324_Frame_000357_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7143 -25.34916),3.5,0
+Guest_Person,##------ Wed Feb  8 15:30:34 2023 ------##,20220807_143317_GS010324_Frame_000357_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7143 -25.34916),0,15
+Guest_Person,##------ Wed Feb  8 15:33:32 2023 ------##,20220807_143317_GS010324_Frame_000375_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,3.5,POINT (130.7144 -25.34901),2.0125,1.4875
+Guest_Person,##------ Wed Feb  8 15:33:32 2023 ------##,20220807_143317_GS010324_Frame_000375_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7144 -25.34901),0,3.5
+Guest_Person,##------ Wed Feb  8 15:33:32 2023 ------##,20220807_143317_GS010324_Frame_000375_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7144 -25.34901),0,7.5
+Guest_Person,##------ Wed Feb  8 15:34:54 2023 ------##,20220807_143317_GS010324_Frame_000394_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7144 -25.34883),0,3.5
+Guest_Person,##------ Wed Feb  8 15:34:54 2023 ------##,20220807_143317_GS010324_Frame_000394_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7144 -25.34883),0,3.5
+Guest_Person,##------ Wed Feb  8 15:38:20 2023 ------##,20220807_143317_GS010324_Frame_000414_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7145 -25.34865),0.4375,3.0625
+Guest_Person,##------ Wed Feb  8 15:38:20 2023 ------##,20220807_143317_GS010324_Frame_000414_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7145 -25.34865),0,7.5
+Guest_Person,##------ Wed Feb  8 15:38:20 2023 ------##,20220807_143317_GS010324_Frame_000414_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7145 -25.34865),4.3125,3.1875
+Guest_Person,##------ Wed Feb  8 15:39:58 2023 ------##,20220807_143317_GS010324_Frame_000440_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,45,POINT (130.7145 -25.34849),25.875,19.125
+Guest_Person,##------ Wed Feb  8 15:41:18 2023 ------##,20220807_143317_GS010324_Frame_000460_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7146 -25.3483),14.375,10.625
+Guest_Person,##------ Wed Feb  8 15:43:27 2023 ------##,20220807_143317_GS010324_Frame_000479_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7146 -25.34811),0,3.5
+Guest_Person,##------ Wed Feb  8 15:43:27 2023 ------##,20220807_143317_GS010324_Frame_000479_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,1,POINT (130.7146 -25.34811),0.575,0.425
+Guest_Person,##------ Wed Feb  8 15:43:27 2023 ------##,20220807_143317_GS010324_Frame_000479_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7146 -25.34811),6.375,8.625
+Guest_Person,##------ Wed Feb  8 15:45:14 2023 ------##,20220807_143317_GS010324_Frame_000514_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7147 -25.34775),0,1
+Guest_Person,##------ Wed Feb  8 15:45:14 2023 ------##,20220807_143317_GS010324_Frame_000514_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7147 -25.34775),0,1
+Guest_Person,##------ Wed Feb  8 15:50:50 2023 ------##,20220807_143317_GS010324_Frame_000498_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7146 -25.34793),0,3.5
+Guest_Person,##------ Wed Feb  8 15:50:50 2023 ------##,20220807_143317_GS010324_Frame_000498_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7146 -25.34793),0,3.5
+Guest_Person,##------ Wed Feb  8 15:50:50 2023 ------##,20220807_143317_GS010324_Frame_000498_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,3.5,POINT (130.7146 -25.34793),2.5375,0.9625
+Guest_Person,##------ Wed Feb  8 15:51:37 2023 ------##,20220807_143317_GS010324_Frame_000533_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7147 -25.34757),0,1
+Guest_Person,##------ Wed Feb  8 15:52:07 2023 ------##,20220807_143317_GS010324_Frame_000549_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7147 -25.34738),0,0
+Guest_Person,##------ Wed Feb  8 15:52:53 2023 ------##,20220807_143317_GS010324_Frame_000567_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7148 -25.34722),0,1
+Guest_Person,##------ Wed Feb  8 15:53:49 2023 ------##,20220807_143317_GS010324_Frame_000587_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7149 -25.34707),0,1
+Guest_Person,##------ Wed Feb  8 15:58:35 2023 ------##,20220807_143317_GS010324_Frame_000626_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,1,POINT (130.7152 -25.34677),1,0
+Guest_Person,##------ Wed Feb  8 15:58:35 2023 ------##,20220807_143317_GS010324_Frame_000626_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,1,POINT (130.7152 -25.34677),0,1
+Guest_Person,##------ Wed Feb  8 15:58:35 2023 ------##,20220807_143317_GS010324_Frame_000626_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7152 -25.34677),0,1
+Guest_Person,##------ Wed Feb  8 15:58:35 2023 ------##,20220807_143317_GS010324_Frame_000626_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7152 -25.34677),0,3.5
+Guest_Person,##------ Wed Feb  8 16:00:45 2023 ------##,20220807_143317_GS010324_Frame_000644_with_overlay.jpg,No Triodia Present,Ground,3.5,POINT (130.7152 -25.3466),3.5,0
+Guest_Person,##------ Wed Feb  8 16:00:45 2023 ------##,20220807_143317_GS010324_Frame_000644_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7152 -25.3466),0,1
+Guest_Person,##------ Wed Feb  8 16:00:45 2023 ------##,20220807_143317_GS010324_Frame_000644_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7152 -25.3466),0,3.5
+Guest_Person,##------ Wed Feb  8 16:04:11 2023 ------##,20220807_143317_GS010324_Frame_000665_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7153 -25.34644),3.4125,0.0875
+Guest_Person,##------ Wed Feb  8 16:04:11 2023 ------##,20220807_143317_GS010324_Frame_000665_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7153 -25.34644),0.9375,6.5625
+Guest_Person,##------ Wed Feb  8 16:04:11 2023 ------##,20220807_143317_GS010324_Frame_000665_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7153 -25.34644),0,7.5
+Guest_Person,##------ Wed Feb  8 16:07:55 2023 ------##,20220807_143317_GS010324_Frame_000690_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7154 -25.34628),0,1
+Guest_Person,##------ Wed Feb  8 16:07:55 2023 ------##,20220807_143317_GS010324_Frame_000690_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7154 -25.34628),0,3.5
+Guest_Person,##------ Thu Feb  9 09:37:14 2023 ------##,20220807_145534_GS010325_Frame_000001_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7155 -25.34628),0.4375,3.0625
+Guest_Person,##------ Thu Feb  9 09:38:41 2023 ------##,20220807_145534_GS010325_Frame_000050_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7157 -25.34634),0,7.5
+Guest_Person,##------ Thu Feb  9 09:38:41 2023 ------##,20220807_145534_GS010325_Frame_000050_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7157 -25.34634),0,7.5
+Guest_Person,##------ Thu Feb  9 09:39:54 2023 ------##,20220807_145534_GS010325_Frame_000068_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7158 -25.34639),0,7.5
+Guest_Person,##------ Thu Feb  9 09:39:54 2023 ------##,20220807_145534_GS010325_Frame_000068_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7158 -25.34639),0,7.5
+Guest_Person,##------ Thu Feb  9 09:40:45 2023 ------##,20220807_145534_GS010325_Frame_000090_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.716 -25.34651),0,3.5
+Guest_Person,##------ Thu Feb  9 09:42:27 2023 ------##,20220807_145534_GS010325_Frame_000106_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,1,POINT (130.7162 -25.34659),1,0
+Guest_Person,##------ Thu Feb  9 09:42:27 2023 ------##,20220807_145534_GS010325_Frame_000106_with_overlay.jpg,No Triodia Present,Ground,3.5,POINT (130.7162 -25.34659),0,3.5
+Guest_Person,##------ Thu Feb  9 09:42:27 2023 ------##,20220807_145534_GS010325_Frame_000106_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7162 -25.34659),0,15
+Guest_Person,##------ Thu Feb  9 09:42:57 2023 ------##,20220807_145534_GS010325_Frame_000122_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7164 -25.34668),0,1
+Guest_Person,##------ Thu Feb  9 09:44:03 2023 ------##,20220807_145534_GS010325_Frame_000151_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7166 -25.34674),0,1
+Guest_Person,##------ Thu Feb  9 09:44:03 2023 ------##,20220807_145534_GS010325_Frame_000151_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7166 -25.34674),0,3.5
+Guest_Person,##------ Thu Feb  9 09:44:52 2023 ------##,20220807_145534_GS010325_Frame_000169_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7168 -25.34679),0,1
+Guest_Person,##------ Thu Feb  9 09:47:56 2023 ------##,20220807_145534_GS010325_Frame_000189_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.717 -25.34684),3.5,0
+Guest_Person,##------ Thu Feb  9 09:47:56 2023 ------##,20220807_145534_GS010325_Frame_000189_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.717 -25.34684),0,3.5
+Guest_Person,##------ Thu Feb  9 09:47:56 2023 ------##,20220807_145534_GS010325_Frame_000189_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.717 -25.34684),0,15
+Guest_Person,##------ Thu Feb  9 09:50:41 2023 ------##,20220807_145534_GS010325_Frame_000219_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,1,POINT (130.7171 -25.34691),0.975,0.025
+Guest_Person,##------ Thu Feb  9 09:50:41 2023 ------##,20220807_145534_GS010325_Frame_000219_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7171 -25.34691),0,1
+Guest_Person,##------ Thu Feb  9 09:50:41 2023 ------##,20220807_145534_GS010325_Frame_000219_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7171 -25.34691),0,3.5
+Guest_Person,##------ Thu Feb  9 09:51:49 2023 ------##,20220807_145534_GS010325_Frame_000649_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7173 -25.34698),3.4125,0.0875
+Guest_Person,##------ Thu Feb  9 09:51:49 2023 ------##,20220807_145534_GS010325_Frame_000649_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7173 -25.34698),0,1
+Guest_Person,##------ Thu Feb  9 09:53:29 2023 ------##,20220807_145534_GS010325_Frame_000666_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7175 -25.34705),0,1
+Guest_Person,##------ Thu Feb  9 09:53:29 2023 ------##,20220807_145534_GS010325_Frame_000666_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7175 -25.34705),0,7.5
+Guest_Person,##------ Thu Feb  9 09:53:49 2023 ------##,20220807_145534_GS010325_Frame_000683_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7177 -25.34708),0,0
+Guest_Person,##------ Thu Feb  9 09:55:21 2023 ------##,20220807_145534_GS010325_Frame_000729_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,1,POINT (130.7181 -25.34718),0,1
+Guest_Person,##------ Thu Feb  9 09:55:49 2023 ------##,20220807_145534_GS010325_Frame_000745_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7183 -25.34721),0,0
+Guest_Person,##------ Thu Feb  9 09:56:18 2023 ------##,20220807_145534_GS010325_Frame_000763_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7185 -25.34729),0,0
+Guest_Person,##------ Thu Feb  9 09:57:07 2023 ------##,20220807_145534_GS010325_Frame_000782_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7187 -25.34737),0,1
+Guest_Person,##------ Thu Feb  9 09:58:07 2023 ------##,20220807_145534_GS010325_Frame_000797_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,1,POINT (130.7189 -25.34742),0,1
+Guest_Person,##------ Thu Feb  9 09:58:07 2023 ------##,20220807_145534_GS010325_Frame_000797_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7189 -25.34742),0,7.5
+Guest_Person,##------ Thu Feb  9 09:58:55 2023 ------##,20220807_145534_GS010325_Frame_000813_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7191 -25.3475),0,7.5
+Guest_Person,##------ Thu Feb  9 09:59:39 2023 ------##,20220807_145534_GS010325_Frame_000831_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7192 -25.3476),0,7.5
+Guest_Person,##------ Thu Feb  9 10:00:14 2023 ------##,20220807_145534_GS010325_Frame_000848_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7194 -25.3477),0,3.5
+Guest_Person,##------ Thu Feb  9 10:01:49 2023 ------##,20220807_145534_GS010325_Frame_000863_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7196 -25.34779),0,1
+Guest_Person,##------ Thu Feb  9 10:01:49 2023 ------##,20220807_145534_GS010325_Frame_000863_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7196 -25.34779),0,7.5
+Guest_Person,##------ Thu Feb  9 10:03:10 2023 ------##,20220807_145534_GS010325_Frame_000879_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7198 -25.34788),0,3.5
+Guest_Person,##------ Thu Feb  9 10:03:10 2023 ------##,20220807_145534_GS010325_Frame_000879_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7198 -25.34788),0,3.5
+Guest_Person,##------ Thu Feb  9 10:04:12 2023 ------##,20220807_145534_GS010325_Frame_000894_with_overlay.jpg,No Triodia Present,Ground,1,POINT (130.72 -25.34798),0,1
+Guest_Person,##------ Thu Feb  9 10:04:12 2023 ------##,20220807_145534_GS010325_Frame_000894_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.72 -25.34798),0,15
+Guest_Person,##------ Thu Feb  9 10:06:44 2023 ------##,20220807_145534_GS010325_Frame_000907_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7201 -25.34802),0,7.5
+Guest_Person,##------ Thu Feb  9 10:06:44 2023 ------##,20220807_145534_GS010325_Frame_000907_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7201 -25.34802),0,3.5
+Guest_Person,##------ Thu Feb  9 10:06:44 2023 ------##,20220807_145534_GS010325_Frame_000907_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,3.5,POINT (130.7201 -25.34802),0,3.5
+Guest_Person,##------ Thu Feb  9 10:08:06 2023 ------##,20220807_145534_GS010325_Frame_000921_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7203 -25.34811),0,1
+Guest_Person,##------ Thu Feb  9 10:08:06 2023 ------##,20220807_145534_GS010325_Frame_000921_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,3.5,POINT (130.7203 -25.34811),0,3.5
+Guest_Person,##------ Thu Feb  9 10:12:41 2023 ------##,20220807_145534_GS010325_Frame_000952_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7207 -25.34819),0.0875,3.4125
+Guest_Person,##------ Thu Feb  9 10:12:41 2023 ------##,20220807_145534_GS010325_Frame_000952_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7207 -25.34819),0,15
+Guest_Person,##------ Thu Feb  9 10:12:41 2023 ------##,20220807_145534_GS010325_Frame_000952_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,3.5,POINT (130.7207 -25.34819),0,3.5
+Guest_Person,##------ Thu Feb  9 10:13:51 2023 ------##,20220807_145534_GS010325_Frame_000968_with_overlay.jpg,No Triodia Present,Ground,1,POINT (130.7209 -25.34823),0,1
+Guest_Person,##------ Thu Feb  9 10:13:51 2023 ------##,20220807_145534_GS010325_Frame_000968_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7209 -25.34823),0,7.5
+Guest_Person,##------ Thu Feb  9 10:14:49 2023 ------##,20220807_145534_GS010325_Frame_000986_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7211 -25.34828),0,1
+Guest_Person,##------ Thu Feb  9 10:14:49 2023 ------##,20220807_145534_GS010325_Frame_000986_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7211 -25.34828),0,7.5
+Guest_Person,##------ Thu Feb  9 10:15:44 2023 ------##,20220807_145534_GS010325_Frame_001002_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7213 -25.34833),0,3.5
+Guest_Person,##------ Thu Feb  9 10:15:44 2023 ------##,20220807_145534_GS010325_Frame_001002_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,1,POINT (130.7213 -25.34833),0,1
+Guest_Person,##------ Thu Feb  9 10:16:20 2023 ------##,20220807_145534_GS010325_Frame_001017_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,1,POINT (130.7215 -25.34838),0,1
+Guest_Person,##------ Thu Feb  9 10:18:21 2023 ------##,20220807_145534_GS010325_Frame_001034_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7217 -25.34845),0,3.5
+Guest_Person,##------ Thu Feb  9 10:18:21 2023 ------##,20220807_145534_GS010325_Frame_001034_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7217 -25.34845),0,15
+Guest_Person,##------ Thu Feb  9 10:18:21 2023 ------##,20220807_145534_GS010325_Frame_001034_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7217 -25.34845),0,3.5
+Guest_Person,##------ Thu Feb  9 10:19:16 2023 ------##,20220807_145534_GS010325_Frame_001053_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7219 -25.34851),0,0
+Guest_Person,##------ Thu Feb  9 10:19:16 2023 ------##,20220807_145534_GS010325_Frame_001053_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7219 -25.34851),0,3.5
+Guest_Person,##------ Thu Feb  9 10:19:16 2023 ------##,20220807_145534_GS010325_Frame_001053_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7219 -25.34851),0,7.5
+Guest_Person,##------ Thu Feb  9 10:20:23 2023 ------##,20220807_145534_GS010325_Frame_001070_with_overlay.jpg,No Triodia Present,Ground,3.5,POINT (130.7221 -25.3486),0,3.5
+Guest_Person,##------ Thu Feb  9 10:20:23 2023 ------##,20220807_145534_GS010325_Frame_001070_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7221 -25.3486),0,15
+Guest_Person,##------ Thu Feb  9 10:21:39 2023 ------##,20220807_145534_GS010325_Frame_001086_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,15,POINT (130.7223 -25.34863),0,15
+Guest_Person,##------ Thu Feb  9 10:22:55 2023 ------##,20220807_145534_GS010325_Frame_001104_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7225 -25.34868),0,3.5
+Guest_Person,##------ Thu Feb  9 10:22:55 2023 ------##,20220807_145534_GS010325_Frame_001104_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7225 -25.34868),0,15
+Guest_Person,##------ Thu Feb  9 10:24:49 2023 ------##,20220807_145534_GS010325_Frame_001119_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7227 -25.34873),0,7.5
+Guest_Person,##------ Thu Feb  9 10:24:49 2023 ------##,20220807_145534_GS010325_Frame_001119_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7227 -25.34873),0,7.5
+Guest_Person,##------ Thu Feb  9 10:24:49 2023 ------##,20220807_145534_GS010325_Frame_001119_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7227 -25.34873),0,3.5
+Guest_Person,##------ Thu Feb  9 10:25:57 2023 ------##,20220807_145534_GS010325_Frame_001134_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7228 -25.34883),0,7.5
+Guest_Person,##------ Thu Feb  9 10:25:57 2023 ------##,20220807_145534_GS010325_Frame_001134_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7228 -25.34883),0,15
+Guest_Person,##------ Thu Feb  9 10:27:31 2023 ------##,20220807_145534_GS010325_Frame_001150_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.723 -25.3489),0,15
+Guest_Person,##------ Thu Feb  9 10:27:31 2023 ------##,20220807_145534_GS010325_Frame_001150_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.723 -25.3489),0,3.5
+Guest_Person,##------ Thu Feb  9 10:30:21 2023 ------##,20220807_145534_GS010325_Frame_001182_with_overlay.jpg,Triodia pungens < 50 cm,Ground,25,POINT (130.7234 -25.34906),0,25
+Guest_Person,##------ Thu Feb  9 10:31:38 2023 ------##,20220807_145534_GS010325_Frame_001198_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7236 -25.34914),0,1
+Guest_Person,##------ Thu Feb  9 10:31:38 2023 ------##,20220807_145534_GS010325_Frame_001198_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7236 -25.34914),0,15
+Guest_Person,##------ Thu Feb  9 10:33:16 2023 ------##,20220807_145534_GS010325_Frame_001215_with_overlay.jpg,No Triodia Present,Ground,3.5,POINT (130.7237 -25.34925),0,3.5
+Guest_Person,##------ Thu Feb  9 10:33:16 2023 ------##,20220807_145534_GS010325_Frame_001215_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7237 -25.34925),0,3.5
+Guest_Person,##------ Thu Feb  9 10:33:16 2023 ------##,20220807_145534_GS010325_Frame_001215_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,1,POINT (130.7237 -25.34925),0,1
+Guest_Person,##------ Thu Feb  9 10:34:51 2023 ------##,20220807_145534_GS010325_Frame_001232_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7239 -25.34934),0,7.5
+Guest_Person,##------ Thu Feb  9 10:34:51 2023 ------##,20220807_145534_GS010325_Frame_001232_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7239 -25.34934),0,15
+Guest_Person,##------ Thu Feb  9 10:36:14 2023 ------##,20220807_145534_GS010325_Frame_001254_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7241 -25.34939),0,3.5
+Guest_Person,##------ Thu Feb  9 10:36:14 2023 ------##,20220807_145534_GS010325_Frame_001254_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7241 -25.34939),0,15
+Guest_Person,##------ Thu Feb  9 10:36:14 2023 ------##,20220807_145534_GS010325_Frame_001254_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7241 -25.34939),0,3.5
+Guest_Person,##------ Thu Feb  9 10:37:05 2023 ------##,20220807_145534_GS010325_Frame_001272_with_overlay.jpg,No Triodia Present,Ground,7.5,POINT (130.7243 -25.34944),0,7.5
+Guest_Person,##------ Thu Feb  9 10:37:05 2023 ------##,20220807_145534_GS010325_Frame_001272_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7243 -25.34944),0,15
+Guest_Person,##------ Thu Feb  9 10:39:05 2023 ------##,20220807_145534_GS010325_Frame_001293_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7245 -25.3495),0,7.5
+Guest_Person,##------ Thu Feb  9 10:39:05 2023 ------##,20220807_145534_GS010325_Frame_001293_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,1,POINT (130.7245 -25.3495),0,1
+Guest_Person,##------ Thu Feb  9 10:39:05 2023 ------##,20220807_145534_GS010325_Frame_001293_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7245 -25.3495),0,7.5
+Guest_Person,##------ Thu Feb  9 10:40:29 2023 ------##,20220807_145534_GS010325_Frame_001551_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7246 -25.34962),0,1
+Guest_Person,##------ Thu Feb  9 10:40:29 2023 ------##,20220807_145534_GS010325_Frame_001551_with_overlay.jpg,Triodia sp. 100-<200 cm,Ground,3.5,POINT (130.7246 -25.34962),0,3.5
+Guest_Person,##------ Thu Feb  9 10:40:29 2023 ------##,20220807_145534_GS010325_Frame_001551_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7246 -25.34962),0,3.5
+Guest_Person,##------ Fri Feb 10 13:29:33 2023 ------##,20220807_153842_GS020327_Frame_000001_with_overlay.jpg,Triodia pungens 200-<400 cm,Ground,15,POINT (130.7116 -25.35488),6.375,8.625
+Guest_Person,##------ Fri Feb 10 13:34:49 2023 ------##,20220807_153842_GS020327_Frame_000141_with_overlay.jpg,Triodia pungens 200-<400 cm,Ground,35,POINT (130.7117 -25.3547),14.875,20.125
+Guest_Person,##------ Fri Feb 10 13:35:41 2023 ------##,20220807_153842_GS020327_Frame_000157_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7117 -25.35452),10.625,14.375
+Guest_Person,##------ Fri Feb 10 13:38:16 2023 ------##,20220807_153842_GS020327_Frame_000173_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7118 -25.35434),14.375,10.625
+Guest_Person,##------ Fri Feb 10 13:42:21 2023 ------##,20220807_153842_GS020327_Frame_000187_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7119 -25.35418),0.425,0.575
+Guest_Person,##------ Fri Feb 10 13:42:21 2023 ------##,20220807_153842_GS020327_Frame_000187_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7119 -25.35418),1.875,13.125
+Guest_Person,##------ Fri Feb 10 13:42:21 2023 ------##,20220807_153842_GS020327_Frame_000187_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7119 -25.35418),0,3.5
+Guest_Person,##------ Fri Feb 10 13:42:21 2023 ------##,20220807_153842_GS020327_Frame_000187_with_overlay.jpg,Triodia pungens 200-<400 cm,Ground,7.5,POINT (130.7119 -25.35418),3.1875,4.3125
+Guest_Person,##------ Fri Feb 10 13:44:41 2023 ------##,20220807_153842_GS020327_Frame_000202_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.712 -25.354),0,3.5
+Guest_Person,##------ Fri Feb 10 13:44:41 2023 ------##,20220807_153842_GS020327_Frame_000202_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,25,POINT (130.712 -25.354),0,25
+Guest_Person,##------ Fri Feb 10 13:44:41 2023 ------##,20220807_153842_GS020327_Frame_000202_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.712 -25.354),0,3.5
+Guest_Person,##------ Fri Feb 10 13:48:06 2023 ------##,20220807_153842_GS020327_Frame_000217_with_overlay.jpg,Triodia pungens < 50 cm,Ground,25,POINT (130.7121 -25.35384),3.125,21.875
+Guest_Person,##------ Fri Feb 10 13:48:06 2023 ------##,20220807_153842_GS020327_Frame_000217_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7121 -25.35384),0.9375,6.5625
+Guest_Person,##------ Fri Feb 10 13:49:05 2023 ------##,20220807_153842_GS020327_Frame_000233_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7121 -25.35368),4.375,30.625
+Guest_Person,##------ Fri Feb 10 13:56:47 2023 ------##,20220807_153842_GS020327_Frame_000249_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7122 -25.35351),2.0625,5.4375
+Guest_Person,##------ Fri Feb 10 13:56:47 2023 ------##,20220807_153842_GS020327_Frame_000249_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,25,POINT (130.7122 -25.35351),14.375,10.625
+Guest_Person,##------ Fri Feb 10 13:56:47 2023 ------##,20220807_153842_GS020327_Frame_000249_with_overlay.jpg,Triodia pungens 200-<400 cm,Ground,7.5,POINT (130.7122 -25.35351),4.3125,3.1875
+Guest_Person,##------ Fri Feb 10 13:58:27 2023 ------##,20220807_153842_GS020327_Frame_000266_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7123 -25.35335),2.0625,5.4375
+Guest_Person,##------ Mon Feb 13 07:52:15 2023 ------##,20220807_153842_GS020327_Frame_000282_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,35,POINT (130.7125 -25.35321),30.625,4.375
+Guest_Person,##------ Mon Feb 13 07:53:03 2023 ------##,20220807_153842_GS020327_Frame_000297_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7126 -25.35305),0.0875,3.4125
+Guest_Person,##------ Mon Feb 13 07:54:50 2023 ------##,20220807_153842_GS020327_Frame_000313_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7126 -25.35288),0.9625,2.5375
+Guest_Person,##------ Mon Feb 13 07:54:50 2023 ------##,20220807_153842_GS020327_Frame_000313_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7126 -25.35288),0,3.5
+Guest_Person,##------ Mon Feb 13 07:55:59 2023 ------##,20220807_153842_GS020327_Frame_000328_with_overlay.jpg,Triodia sp. < 50 cm,Ground,25,POINT (130.7127 -25.35271),6.875,18.125
+Guest_Person,##------ Mon Feb 13 07:58:21 2023 ------##,20220807_153842_GS020327_Frame_000343_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7128 -25.35254),6.375,8.625
+Guest_Person,##------ Mon Feb 13 07:58:21 2023 ------##,20220807_153842_GS020327_Frame_000343_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7128 -25.35254),1.875,13.125
+Guest_Person,##------ Mon Feb 13 07:58:21 2023 ------##,20220807_153842_GS020327_Frame_000343_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7128 -25.35254),0,3.5
+Guest_Person,##------ Mon Feb 13 08:01:45 2023 ------##,20220807_153842_GS020327_Frame_000365_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7129 -25.35239),0.9375,6.5625
+Guest_Person,##------ Mon Feb 13 08:01:45 2023 ------##,20220807_153842_GS020327_Frame_000365_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7129 -25.35239),0.9375,6.5625
+Guest_Person,##------ Mon Feb 13 08:01:45 2023 ------##,20220807_153842_GS020327_Frame_000365_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,15,POINT (130.7129 -25.35239),1.875,13.125
+Guest_Person,##------ Mon Feb 13 08:02:07 2023 ------##,20220807_153842_GS020327_Frame_000382_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7131 -25.3523),0,0
+Guest_Person,##------ Mon Feb 13 08:05:13 2023 ------##,20220807_153842_GS010327_Frame_000001_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7206 -25.35807),0,1
+Guest_Person,##------ Mon Feb 13 08:05:13 2023 ------##,20220807_153842_GS010327_Frame_000001_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7206 -25.35807),0,7.5
+Guest_Person,##------ Mon Feb 13 08:05:13 2023 ------##,20220807_153842_GS010327_Frame_000001_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7206 -25.35807),7.5,0
+Guest_Person,##------ Mon Feb 13 08:07:59 2023 ------##,20220807_153842_GS010327_Frame_000343_with_overlay.jpg,Triodia sp. < 50 cm,Ground,7.5,POINT (130.7204 -25.35797),4.3125,3.1875
+Guest_Person,##------ Mon Feb 13 08:07:59 2023 ------##,20220807_153842_GS010327_Frame_000343_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7204 -25.35797),0.9375,6.5625
+Guest_Person,##------ Mon Feb 13 08:07:59 2023 ------##,20220807_153842_GS010327_Frame_000343_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7204 -25.35797),7.5,0
+Guest_Person,##------ Mon Feb 13 08:08:53 2023 ------##,20220807_153842_GS010327_Frame_000362_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7203 -25.3579),3.0625,0.4375
+Guest_Person,##------ Mon Feb 13 08:09:29 2023 ------##,20220807_153842_GS010327_Frame_000378_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7201 -25.35787),0,0
+Guest_Person,##------ Mon Feb 13 08:11:03 2023 ------##,20220807_153842_GS010327_Frame_000394_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7199 -25.3578),14.875,20.125
+Guest_Person,##------ Mon Feb 13 08:12:26 2023 ------##,20220807_153842_GS010327_Frame_000411_with_overlay.jpg,No Triodia Present,Ground,3.5,POINT (130.7197 -25.35772),0,3.5
+Guest_Person,##------ Mon Feb 13 08:12:26 2023 ------##,20220807_153842_GS010327_Frame_000411_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7197 -25.35772),0,15
+Guest_Person,##------ Mon Feb 13 08:13:51 2023 ------##,20220807_153842_GS010327_Frame_000429_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7195 -25.35767),0,3.5
+Guest_Person,##------ Mon Feb 13 08:13:51 2023 ------##,20220807_153842_GS010327_Frame_000429_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,7.5,POINT (130.7195 -25.35767),3.1875,4.3125
+Guest_Person,##------ Mon Feb 13 08:15:37 2023 ------##,20220807_153842_GS010327_Frame_000446_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,15,POINT (130.7193 -25.35762),10.875,4.125
+Guest_Person,##------ Mon Feb 13 08:17:54 2023 ------##,20220807_153842_GS010327_Frame_000462_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7191 -25.35755),0,7.5
+Guest_Person,##------ Mon Feb 13 08:17:54 2023 ------##,20220807_153842_GS010327_Frame_000462_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7191 -25.35755),0,7.5
+Guest_Person,##------ Mon Feb 13 08:17:54 2023 ------##,20220807_153842_GS010327_Frame_000462_with_overlay.jpg,Triodia sp. 100-<200 cm,Ground,3.5,POINT (130.7191 -25.35755),2.5375,0.9625
+Guest_Person,##------ Mon Feb 13 08:19:28 2023 ------##,20220807_153842_GS010327_Frame_000478_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7189 -25.35749),0,7.5
+Guest_Person,##------ Mon Feb 13 08:19:28 2023 ------##,20220807_153842_GS010327_Frame_000478_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7189 -25.35749),0,7.5
+Guest_Person,##------ Mon Feb 13 08:19:28 2023 ------##,20220807_153842_GS010327_Frame_000478_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,7.5,POINT (130.7189 -25.35749),0,7.5
+Guest_Person,##------ Mon Feb 13 08:22:25 2023 ------##,20220807_153842_GS010327_Frame_000495_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7187 -25.35742),0,7.5
+Guest_Person,##------ Mon Feb 13 08:22:25 2023 ------##,20220807_153842_GS010327_Frame_000495_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,7.5,POINT (130.7187 -25.35742),0,7.5
+Guest_Person,##------ Mon Feb 13 08:22:25 2023 ------##,20220807_153842_GS010327_Frame_000495_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7187 -25.35742),8.625,6.375
+Guest_Person,##------ Mon Feb 13 08:26:49 2023 ------##,20220807_153842_GS010327_Frame_000511_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7185 -25.35736),7.5,0
+Guest_Person,##------ Mon Feb 13 08:26:49 2023 ------##,20220807_153842_GS010327_Frame_000511_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7185 -25.35736),0,7.5
+Guest_Person,##------ Mon Feb 13 08:26:49 2023 ------##,20220807_153842_GS010327_Frame_000511_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,7.5,POINT (130.7185 -25.35736),2.0625,5.4375
+Guest_Person,##------ Mon Feb 13 08:28:26 2023 ------##,20220807_153842_GS010327_Frame_000527_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7183 -25.35729),0,1
+Guest_Person,##------ Mon Feb 13 08:28:26 2023 ------##,20220807_153842_GS010327_Frame_000527_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,45,POINT (130.7183 -25.35729),32.625,12.375
+Guest_Person,##------ Mon Feb 13 08:28:59 2023 ------##,20220807_153842_GS010327_Frame_000543_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,45,POINT (130.7182 -25.35721),32.625,12.375
+Guest_Person,##------ Mon Feb 13 08:30:16 2023 ------##,20220807_153842_GS010327_Frame_000559_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,55,POINT (130.718 -25.35712),39.875,15.125
+Guest_Person,##------ Mon Feb 13 08:31:25 2023 ------##,20220807_153842_GS010327_Frame_000576_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,55,POINT (130.7178 -25.35702),39.875,15.125
+Guest_Person,##------ Mon Feb 13 08:32:54 2023 ------##,20220807_153842_GS010327_Frame_000593_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7176 -25.35694),0,3.5
+Guest_Person,##------ Mon Feb 13 08:32:54 2023 ------##,20220807_153842_GS010327_Frame_000593_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,45,POINT (130.7176 -25.35694),39.375,5.625
+Guest_Person,##------ Mon Feb 13 08:33:32 2023 ------##,20220807_153842_GS010327_Frame_000610_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,55,POINT (130.7175 -25.35683),39.875,15.125
+Guest_Person,##------ Mon Feb 13 08:35:19 2023 ------##,20220807_153842_GS010327_Frame_000627_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7173 -25.35674),0,3.5
+Guest_Person,##------ Mon Feb 13 08:35:19 2023 ------##,20220807_153842_GS010327_Frame_000627_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7173 -25.35674),0,15
+Guest_Person,##------ Mon Feb 13 08:35:19 2023 ------##,20220807_153842_GS010327_Frame_000627_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7173 -25.35674),0.4375,3.0625
+Guest_Person,##------ Mon Feb 13 08:36:23 2023 ------##,20220807_153842_GS010327_Frame_000643_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7171 -25.35669),3.1875,4.3125
+Guest_Person,##------ Mon Feb 13 08:37:57 2023 ------##,20220807_153842_GS010327_Frame_000663_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,35,POINT (130.7169 -25.3566),4.375,30.625
+Guest_Person,##------ Mon Feb 13 08:38:52 2023 ------##,20220807_153842_GS010327_Frame_000680_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7167 -25.35658),0,1
+Guest_Person,##------ Mon Feb 13 08:38:52 2023 ------##,20220807_153842_GS010327_Frame_000680_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,3.5,POINT (130.7167 -25.35658),1.4875,2.0125
+Guest_Person,##------ Mon Feb 13 08:39:14 2023 ------##,20220807_153842_GS010327_Frame_000697_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7165 -25.35657),0,1
+Guest_Person,##------ Mon Feb 13 08:40:27 2023 ------##,20220807_153842_GS010327_Frame_000711_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,1,POINT (130.7163 -25.35665),0.425,0.575
+Guest_Person,##------ Mon Feb 13 08:41:44 2023 ------##,20220807_153842_GS010327_Frame_000732_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7161 -25.35662),6.375,8.625
+Guest_Person,##------ Mon Feb 13 08:42:32 2023 ------##,20220807_153842_GS010327_Frame_000746_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.716 -25.35649),0,1
+Guest_Person,##------ Mon Feb 13 08:42:32 2023 ------##,20220807_153842_GS010327_Frame_000746_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.716 -25.35649),3.4125,0.0875
+Guest_Person,##------ Mon Feb 13 08:44:50 2023 ------##,20220807_153842_GS010327_Frame_000762_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7158 -25.35641),0,0
+Guest_Person,##------ Mon Feb 13 08:45:07 2023 ------##,20220807_153842_GS010327_Frame_000795_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7156 -25.35633),0,0
+Guest_Person,##------ Mon Feb 13 08:45:27 2023 ------##,20220807_153842_GS010327_Frame_001209_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7154 -25.35628),0,1
+Guest_Person,##------ Mon Feb 13 08:45:53 2023 ------##,20220807_153842_GS010327_Frame_001230_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7152 -25.35619),0,1
+Guest_Person,##------ Mon Feb 13 08:46:35 2023 ------##,20220807_153842_GS010327_Frame_001246_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.715 -25.35611),5.4375,2.0625
+Guest_Person,##------ Mon Feb 13 08:47:10 2023 ------##,20220807_153842_GS010327_Frame_001262_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7149 -25.35601),14.375,10.625
+Guest_Person,##------ Mon Feb 13 08:48:01 2023 ------##,20220807_153842_GS010327_Frame_001278_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7147 -25.35594),18.125,6.875
+Guest_Person,##------ Mon Feb 13 08:48:44 2023 ------##,20220807_153842_GS010327_Frame_001293_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7145 -25.35585),14.875,20.125
+Guest_Person,##------ Mon Feb 13 08:49:20 2023 ------##,20220807_153842_GS010327_Frame_001308_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,7.5,POINT (130.7143 -25.35576),2.0625,5.4375
+Guest_Person,##------ Mon Feb 13 08:50:18 2023 ------##,20220807_153842_GS010327_Frame_001323_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7142 -25.35563),10.625,14.375
+Guest_Person,##------ Mon Feb 13 08:51:06 2023 ------##,20220807_153842_GS010327_Frame_001340_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.714 -25.35551),1.4875,2.0125
+Guest_Person,##------ Mon Feb 13 08:51:49 2023 ------##,20220807_153842_GS010327_Frame_001356_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7139 -25.35539),4.125,10.875
+Guest_Person,##------ Mon Feb 13 08:52:57 2023 ------##,20220807_153842_GS010327_Frame_001371_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7137 -25.35529),8.625,6.375
+Guest_Person,##------ Mon Feb 13 08:53:33 2023 ------##,20220807_153842_GS010327_Frame_001387_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7136 -25.35517),8.625,6.375
+Guest_Person,##------ Mon Feb 13 08:54:36 2023 ------##,20220807_153842_GS010327_Frame_001403_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7134 -25.35517),3.4125,0.0875
+Guest_Person,##------ Mon Feb 13 08:55:30 2023 ------##,20220807_153842_GS010327_Frame_001419_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,25,POINT (130.7132 -25.3552),6.875,18.125
+Guest_Person,##------ Mon Feb 13 08:56:15 2023 ------##,20220807_153842_GS010327_Frame_001434_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.713 -25.35514),4.375,30.625
+Guest_Person,##------ Mon Feb 13 08:56:55 2023 ------##,20220807_153842_GS010327_Frame_001448_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7128 -25.35506),14.875,20.125
+Guest_Person,##------ Mon Feb 13 08:57:30 2023 ------##,20220807_153842_GS010327_Frame_001461_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7126 -25.35497),25.375,9.625
+Guest_Person,##------ Mon Feb 13 08:58:02 2023 ------##,20220807_153842_GS010327_Frame_001477_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7124 -25.35488),4.125,10.875
+Guest_Person,##------ Mon Feb 13 08:58:56 2023 ------##,20220807_153842_GS010327_Frame_001494_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7122 -25.35485),20.125,14.875
+Guest_Person,##------ Mon Feb 13 08:59:38 2023 ------##,20220807_153842_GS010327_Frame_001510_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.712 -25.35487),1.875,13.125
+Guest_Person,##------ Mon Feb 13 09:01:20 2023 ------##,20220807_153842_GS010327_Frame_001525_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,3.5,POINT (130.7118 -25.35484),2.0125,1.4875
+Guest_Person,##------ Mon Feb 13 09:01:20 2023 ------##,20220807_153842_GS010327_Frame_001525_with_overlay.jpg,Triodia pungens 400+ cm,Ground,25,POINT (130.7118 -25.35484),10.625,14.375
+Guest_Person,##------ Mon Feb 13 09:02:55 2023 ------##,20220807_153842_GS010327_Frame_001553_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,7.5,POINT (130.7116 -25.35487),4.3125,3.1875
+Guest_Person,##------ Mon Feb 13 09:02:55 2023 ------##,20220807_153842_GS010327_Frame_001553_with_overlay.jpg,Triodia pungens 400+ cm,Ground,15,POINT (130.7116 -25.35487),8.625,6.375
+Guest_Person,##------ Mon Feb 13 09:04:20 2023 ------##,20220807_152153_GS010326_Frame_000001_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7246 -25.34963),0,3.5
+Guest_Person,##------ Mon Feb 13 09:04:20 2023 ------##,20220807_152153_GS010326_Frame_000001_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7246 -25.34963),0,7.5
+Guest_Person,##------ Mon Feb 13 09:05:13 2023 ------##,20220807_152153_GS010326_Frame_000079_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7246 -25.34982),0,7.5
+Guest_Person,##------ Mon Feb 13 09:05:13 2023 ------##,20220807_152153_GS010326_Frame_000079_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7246 -25.34982),0,7.5
+Guest_Person,##------ Mon Feb 13 09:06:09 2023 ------##,20220807_152153_GS010326_Frame_000097_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7245 -25.35),0,15
+Guest_Person,##------ Mon Feb 13 09:06:09 2023 ------##,20220807_152153_GS010326_Frame_000097_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7245 -25.35),0,3.5
+Guest_Person,##------ Mon Feb 13 09:07:00 2023 ------##,20220807_152153_GS010326_Frame_000114_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7245 -25.35017),0,3.5
+Guest_Person,##------ Mon Feb 13 09:07:00 2023 ------##,20220807_152153_GS010326_Frame_000114_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7245 -25.35017),0,7.5
+Guest_Person,##------ Mon Feb 13 09:07:47 2023 ------##,20220807_152153_GS010326_Frame_000130_with_overlay.jpg,Triodia sp. < 50 cm,Ground,25,POINT (130.7244 -25.35036),0,25
+Guest_Person,##------ Mon Feb 13 09:09:25 2023 ------##,20220807_152153_GS010326_Frame_000148_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7244 -25.35054),0,7.5
+Guest_Person,##------ Mon Feb 13 09:09:25 2023 ------##,20220807_152153_GS010326_Frame_000148_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7244 -25.35054),0,15
+Guest_Person,##------ Mon Feb 13 09:10:10 2023 ------##,20220807_152153_GS010326_Frame_000164_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7244 -25.35072),0,7.5
+Guest_Person,##------ Mon Feb 13 09:10:10 2023 ------##,20220807_152153_GS010326_Frame_000164_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7244 -25.35072),0,3.5
+Guest_Person,##------ Mon Feb 13 09:10:34 2023 ------##,20220807_152153_GS010326_Frame_000181_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7243 -25.35091),0,3.5
+Guest_Person,##------ Mon Feb 13 09:11:14 2023 ------##,20220807_152153_GS010326_Frame_000196_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,1,POINT (130.7243 -25.35108),0,1
+Guest_Person,##------ Mon Feb 13 09:11:33 2023 ------##,20220807_152153_GS010326_Frame_000211_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7242 -25.35124),0,0
+Guest_Person,##------ Mon Feb 13 09:12:31 2023 ------##,20220807_152153_GS010326_Frame_000227_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7241 -25.35141),0,3.5
+Guest_Person,##------ Mon Feb 13 09:12:32 2023 ------##,20220807_152153_GS010326_Frame_000227_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7241 -25.35141),0,7.5
+Guest_Person,##------ Mon Feb 13 09:14:03 2023 ------##,20220807_152153_GS010326_Frame_000242_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.724 -25.35157),0,1
+Guest_Person,##------ Mon Feb 13 09:14:03 2023 ------##,20220807_152153_GS010326_Frame_000242_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.724 -25.35157),0,15
+Guest_Person,##------ Mon Feb 13 09:14:03 2023 ------##,20220807_152153_GS010326_Frame_000242_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.724 -25.35157),0,3.5
+Guest_Person,##------ Mon Feb 13 09:14:44 2023 ------##,20220807_152153_GS010326_Frame_000259_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7239 -25.35175),0,3.5
+Guest_Person,##------ Mon Feb 13 09:14:44 2023 ------##,20220807_152153_GS010326_Frame_000259_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7239 -25.35175),0,7.5
+Guest_Person,##------ Mon Feb 13 09:15:15 2023 ------##,20220807_152153_GS010326_Frame_000274_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7238 -25.35189),0,3.5
+Guest_Person,##------ Mon Feb 13 09:16:03 2023 ------##,20220807_152153_GS010326_Frame_000288_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7236 -25.35202),0,3.5
+Guest_Person,##------ Mon Feb 13 09:16:03 2023 ------##,20220807_152153_GS010326_Frame_000288_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7236 -25.35202),0,7.5
+Guest_Person,##------ Mon Feb 13 09:17:15 2023 ------##,20220807_152153_GS010326_Frame_000304_with_overlay.jpg,Triodia pungens < 50 cm,Ground,25,POINT (130.7235 -25.35217),0,25
+Guest_Person,##------ Mon Feb 13 09:17:15 2023 ------##,20220807_152153_GS010326_Frame_000304_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7235 -25.35217),0,3.5
+Guest_Person,##------ Mon Feb 13 09:18:01 2023 ------##,20220807_152153_GS010326_Frame_000321_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7234 -25.35232),0,15
+Guest_Person,##------ Mon Feb 13 09:18:01 2023 ------##,20220807_152153_GS010326_Frame_000321_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7234 -25.35232),0,15
+Guest_Person,##------ Mon Feb 13 09:19:38 2023 ------##,20220807_152153_GS010326_Frame_000338_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7233 -25.35251),0,3.5
+Guest_Person,##------ Mon Feb 13 09:19:38 2023 ------##,20220807_152153_GS010326_Frame_000338_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7233 -25.35251),0,15
+Guest_Person,##------ Mon Feb 13 09:19:38 2023 ------##,20220807_152153_GS010326_Frame_000338_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7233 -25.35251),0,3.5
+Guest_Person,##------ Mon Feb 13 09:20:16 2023 ------##,20220807_152153_GS010326_Frame_000356_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7232 -25.35267),0,1
+Guest_Person,##------ Mon Feb 13 09:21:08 2023 ------##,20220807_152153_GS010326_Frame_000373_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7231 -25.35282),0,3.5
+Guest_Person,##------ Mon Feb 13 09:21:08 2023 ------##,20220807_152153_GS010326_Frame_000373_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7231 -25.35282),0,7.5
+Guest_Person,##------ Mon Feb 13 09:23:06 2023 ------##,20220807_152153_GS010326_Frame_000390_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.723 -25.35298),0,3.5
+Guest_Person,##------ Mon Feb 13 09:24:16 2023 ------##,20220807_152153_GS010326_Frame_000405_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7229 -25.35316),0,3.5
+Guest_Person,##------ Mon Feb 13 09:24:16 2023 ------##,20220807_152153_GS010326_Frame_000405_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7229 -25.35316),0,3.5
+Guest_Person,##------ Mon Feb 13 09:24:16 2023 ------##,20220807_152153_GS010326_Frame_000405_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7229 -25.35316),0,3.5
+Guest_Person,##------ Mon Feb 13 09:28:42 2023 ------##,20220807_152153_GS010326_Frame_000421_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7228 -25.35331),0,3.5
+Guest_Person,##------ Mon Feb 13 09:28:42 2023 ------##,20220807_152153_GS010326_Frame_000421_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7228 -25.35331),0,15
+Guest_Person,##------ Mon Feb 13 09:31:10 2023 ------##,20220807_152153_GS010326_Frame_000441_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,3.5,POINT (130.7227 -25.35348),3.4125,0.0875
+Guest_Person,##------ Mon Feb 13 09:31:10 2023 ------##,20220807_152153_GS010326_Frame_000441_with_overlay.jpg,Triodia sp. < 50 cm,Ground,3.5,POINT (130.7227 -25.35348),0,3.5
+Guest_Person,##------ Mon Feb 13 09:31:10 2023 ------##,20220807_152153_GS010326_Frame_000441_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7227 -25.35348),0,7.5
+Guest_Person,##------ Mon Feb 13 09:32:01 2023 ------##,20220807_152153_GS010326_Frame_000458_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7227 -25.35366),0,1
+Guest_Person,##------ Mon Feb 13 09:32:01 2023 ------##,20220807_152153_GS010326_Frame_000458_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,7.5,POINT (130.7227 -25.35366),6.5625,0.9375
+Guest_Person,##------ Mon Feb 13 09:33:05 2023 ------##,20220807_152153_GS010326_Frame_000477_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,15,POINT (130.7226 -25.35384),8.625,6.375
+Guest_Person,##------ Mon Feb 13 09:34:15 2023 ------##,20220807_152153_GS010326_Frame_000494_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7226 -25.35402),0,7.5
+Guest_Person,##------ Mon Feb 13 09:34:15 2023 ------##,20220807_152153_GS010326_Frame_000494_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7226 -25.35402),0,7.5
+Guest_Person,##------ Mon Feb 13 09:35:13 2023 ------##,20220807_152153_GS010326_Frame_000510_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7225 -25.35419),0,1
+Guest_Person,##------ Mon Feb 13 09:35:13 2023 ------##,20220807_152153_GS010326_Frame_000510_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7225 -25.35419),0,15
+Guest_Person,##------ Mon Feb 13 09:36:09 2023 ------##,20220807_152153_GS010326_Frame_000528_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7224 -25.35437),0,15
+Guest_Person,##------ Mon Feb 13 09:36:09 2023 ------##,20220807_152153_GS010326_Frame_000528_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7224 -25.35437),0,1
+Guest_Person,##------ Mon Feb 13 09:36:50 2023 ------##,20220807_152153_GS010326_Frame_000546_with_overlay.jpg,Triodia sp. < 50 cm,Ground,1,POINT (130.7223 -25.35451),0,1
+Guest_Person,##------ Mon Feb 13 09:36:50 2023 ------##,20220807_152153_GS010326_Frame_000546_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7223 -25.35451),0,3.5
+Guest_Person,##------ Mon Feb 13 09:37:59 2023 ------##,20220807_152153_GS010326_Frame_000562_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7223 -25.35469),0,3.5
+Guest_Person,##------ Mon Feb 13 09:37:59 2023 ------##,20220807_152153_GS010326_Frame_000562_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,25,POINT (130.7223 -25.35469),0,25
+Guest_Person,##------ Mon Feb 13 09:38:33 2023 ------##,20220807_152153_GS010326_Frame_000578_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7222 -25.35486),0,7.5
+Guest_Person,##------ Mon Feb 13 09:39:18 2023 ------##,20220807_152153_GS010326_Frame_000594_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7221 -25.35504),0,15
+Guest_Person,##------ Mon Feb 13 09:39:18 2023 ------##,20220807_152153_GS010326_Frame_000594_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.7221 -25.35504),0,1
+Guest_Person,##------ Mon Feb 13 09:39:58 2023 ------##,20220807_152153_GS010326_Frame_000609_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.722 -25.35521),0,7.5
+Guest_Person,##------ Mon Feb 13 09:39:58 2023 ------##,20220807_152153_GS010326_Frame_000609_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,1,POINT (130.722 -25.35521),0,1
+Guest_Person,##------ Mon Feb 13 09:40:24 2023 ------##,20220807_152153_GS010326_Frame_000624_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7219 -25.35537),0,3.5
+Guest_Person,##------ Mon Feb 13 09:40:34 2023 ------##,20220807_152153_GS010326_Frame_000640_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7218 -25.35553),0,0
+Guest_Person,##------ Mon Feb 13 09:41:41 2023 ------##,20220807_152153_GS010326_Frame_000657_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,55,POINT (130.7218 -25.3557),1.375,53.625
+Guest_Person,##------ Mon Feb 13 09:42:35 2023 ------##,20220807_152153_GS010326_Frame_000673_with_overlay.jpg,Triodia pungens < 50 cm,Ground,3.5,POINT (130.7217 -25.35587),0,3.5
+Guest_Person,##------ Mon Feb 13 09:42:35 2023 ------##,20220807_152153_GS010326_Frame_000673_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,25,POINT (130.7217 -25.35587),0,25
+Guest_Person,##------ Mon Feb 13 09:43:18 2023 ------##,20220807_152153_GS010326_Frame_000689_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7216 -25.35605),0,15
+Guest_Person,##------ Mon Feb 13 09:43:18 2023 ------##,20220807_152153_GS010326_Frame_000689_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7216 -25.35605),0,15
+Guest_Person,##------ Mon Feb 13 09:45:03 2023 ------##,20220807_152153_GS010326_Frame_000706_with_overlay.jpg,Triodia pungens < 50 cm,Ground,7.5,POINT (130.7215 -25.35622),0.9375,6.5625
+Guest_Person,##------ Mon Feb 13 09:45:03 2023 ------##,20220807_152153_GS010326_Frame_000706_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7215 -25.35622),0,15
+Guest_Person,##------ Mon Feb 13 09:45:03 2023 ------##,20220807_152153_GS010326_Frame_000706_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,7.5,POINT (130.7215 -25.35622),0.9375,6.5625
+Guest_Person,##------ Mon Feb 13 09:46:00 2023 ------##,20220807_152153_GS010326_Frame_000722_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7215 -25.35641),0,15
+Guest_Person,##------ Mon Feb 13 09:46:00 2023 ------##,20220807_152153_GS010326_Frame_000722_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7215 -25.35641),0,15
+Guest_Person,##------ Mon Feb 13 09:46:40 2023 ------##,20220807_152153_GS010326_Frame_000738_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,45,POINT (130.7214 -25.35658),25.875,19.125
+Guest_Person,##------ Mon Feb 13 09:48:53 2023 ------##,20220807_152153_GS010326_Frame_000771_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7213 -25.35692),4.375,30.625
+Guest_Person,##------ Mon Feb 13 09:49:50 2023 ------##,20220807_152153_GS010326_Frame_000788_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7212 -25.35709),20.125,14.875
+Guest_Person,##------ Mon Feb 13 09:50:17 2023 ------##,20220807_152153_GS010326_Frame_000805_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,25,POINT (130.7211 -25.35728),14.375,10.625
+Guest_Person,##------ Mon Feb 13 09:50:47 2023 ------##,20220807_152153_GS010326_Frame_000820_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.721 -25.3574),4.375,30.625
+Guest_Person,##------ Mon Feb 13 09:51:21 2023 ------##,20220807_152153_GS010326_Frame_000837_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7209 -25.35754),14.875,20.125
+Guest_Person,##------ Mon Feb 13 09:52:10 2023 ------##,20220807_152153_GS010326_Frame_000854_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,65,POINT (130.7208 -25.35771),47.125,17.875
+Guest_Person,##------ Mon Feb 13 09:52:43 2023 ------##,20220807_152153_GS010326_Frame_000869_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7207 -25.35787),0,3.5
+Guest_Person,##------ Mon Feb 13 09:53:46 2023 ------##,20220807_152153_GS010326_Frame_000913_with_overlay.jpg,Triodia sp. >100cm old fragmentary,Ground,15,POINT (130.7206 -25.35804),14.625,0.375
+Guest_Person,##------ Mon Feb 13 11:13:14 2023 ------##,20220807_143317_GS010324_Frame_000096_with_overlay.jpg,Triodia sp. < 50 cm,Ground,15,POINT (130.7131 -25.35186),0,15
+Guest_Person,##------ Fri May 12 11:25:41 2023 ------##,20220807_143317_GS010324_Frame_000001_with_overlay.jpg,No Triodia Present,Ground,0,POINT (130.7133 -25.35237),0,0
+Guest_Person,##------ Fri May 12 11:27:53 2023 ------##,20220807_145534_GS010325_Frame_000711_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,7.5,POINT (130.7179 -25.34714),0,7.5
+Guest_Person,##------ Fri May 12 11:28:56 2023 ------##,20220807_152153_GS010326_Frame_000755_with_overlay.jpg,Triodia pungens 100-<200 cm,Ground,3.5,POINT (130.7213 -25.35675),0.0875,3.4125
+Guest_Person,##------ Fri May 12 11:28:56 2023 ------##,20220807_152153_GS010326_Frame_000755_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,35,POINT (130.7213 -25.35675),9.625,25.375
+Guest_Person,##------ Fri May 12 11:57:41 2023 ------##,20220807_143317_GS010324_Frame_000128_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,3.5,POINT (130.7132 -25.3515),0,3.5
+Guest_Person,##------ Fri May 12 11:58:38 2023 ------##,20220807_143317_GS010324_Frame_000194_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,7.5,POINT (130.7134 -25.35079),0,7.5
+Guest_Person,##------ Fri May 12 11:58:38 2023 ------##,20220807_143317_GS010324_Frame_000194_with_overlay.jpg,Triodia sp. < 50 cm,Ground,15,POINT (130.7134 -25.35079),0,15
+Guest_Person,##------ Fri May 12 11:59:08 2023 ------##,20220807_143317_GS010324_Frame_000338_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,7.5,POINT (130.7142 -25.34934),0,7.5
+Guest_Person,##------ Fri May 12 11:59:08 2023 ------##,20220807_143317_GS010324_Frame_000338_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,3.5,POINT (130.7142 -25.34934),0,3.5
+Guest_Person,##------ Fri May 12 11:59:08 2023 ------##,20220807_143317_GS010324_Frame_000338_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7142 -25.34934),0,1
+Guest_Person,##------ Fri May 12 12:00:27 2023 ------##,20220807_143317_GS010324_Frame_000609_with_overlay.jpg,Triodia pungens  >100cm old fragmentary,Ground,3.5,POINT (130.7151 -25.34692),3.5,0
+Guest_Person,##------ Fri May 12 12:00:27 2023 ------##,20220807_143317_GS010324_Frame_000609_with_overlay.jpg,Triodia pungens < 50 cm,Ground,1,POINT (130.7151 -25.34692),0,1
+Guest_Person,##------ Fri May 12 12:00:27 2023 ------##,20220807_143317_GS010324_Frame_000609_with_overlay.jpg,Triodia pungens 50-<100 cm,Ground,15,POINT (130.7151 -25.34692),0,15
+Guest_Person,##------ Fri May 12 12:01:39 2023 ------##,20220807_145534_GS010325_Frame_001167_with_overlay.jpg,Triodia schinzii 50-<100 cm,Ground,1,POINT (130.7232 -25.34897),0,1
+Guest_Person,##------ Fri May 12 12:01:39 2023 ------##,20220807_145534_GS010325_Frame_001167_with_overlay.jpg,Triodia pungens < 50 cm,Ground,15,POINT (130.7232 -25.34897),0,15
+Guest_Person,##------ Fri May 12 12:32:51 2023 ------##,20220807_145534_GS010325_Frame_000935_with_overlay.jpg,Triodia sp. 50-<100 cm,Ground,25,POINT (130.7205 -25.34814),0,25

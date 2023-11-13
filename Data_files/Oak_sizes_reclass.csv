@@ -1,0 +1,14 @@
+﻿species,Taxon,Size_class,Burnt,Count
+Burnt Allocasuarina decaisneana Seedling (<1m),Allocasuarina decaisneana,Seedling,Yes,1
+Burnt Allocasuarina decaisneana Juvenile (1-4m),Allocasuarina decaisneana,Juvenile,Yes,1
+Burnt Allocasuarina decaisneana Early Pole (4-6m crown forming),Allocasuarina decaisneana,Early_Pole,Yes,1
+Burnt Allocasuarina decaisneana Late Pole (4-6m clear crown),Allocasuarina decaisneana,Late_Pole,Yes,1
+Burnt Allocasuarina decaisneana Early Mature (>6m V branches),Allocasuarina decaisneana,Early_Mature,Yes,1
+Burnt Allocasuarina decaisneana Mature (>8m H branches),Allocasuarina decaisneana,Mature,Yes,1
+Allocasuarina decaisneana Seedling (<1m),Allocasuarina decaisneana,Seedling,No,1
+Allocasuarina decaisneana Juvenile (1-4m),Allocasuarina decaisneana,Juvenile,No,1
+Allocasuarina decaisneana Early Pole (4-6m crown forming),Allocasuarina decaisneana,Early_Pole,No,1
+Allocasuarina decaisneana Late Pole (4-6m clear crown),Allocasuarina decaisneana,Late_Pole,No,1
+Allocasuarina decaisneana Early Mature (>6m V branches),Allocasuarina decaisneana,Early_Mature,No,1
+Allocasuarina decaisneana Mature (>8m H braches),Allocasuarina decaisneana,Mature,No,1
+2-5 Allocasuarina decaisneana Early Mature (>6m V branches),Allocasuarina decaisneana,Early_Mature,No,3.5

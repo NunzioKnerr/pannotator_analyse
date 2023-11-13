@@ -1,0 +1,13 @@
+---
+title: "README"
+output: md_document
+date: "2023-11-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A Package for Annotating Panospheric (360 Degree) Images in R - Example Files
+
+This repository contains the full code required to generate related panels and analyses presented in Figures 4-6. To use it please clone the repository and then open the project pannotator_examples.Rproj in RStudio. All code is provided in the associated PannotatoR_Results.qmd file (quarto must be installed). All data files required are provided in the Data_file folder.
