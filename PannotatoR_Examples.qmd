@@ -1,5 +1,5 @@
 ---
-title: "PannotatoR_Results"
+title: "PannotatoR_Examples"
 author: "Anonymised for review"
 format: pdf
 editor: visual
@@ -19,8 +19,6 @@ library(rcompanion)
 library(sf)
 library(stringr)
 
-
-
 ```
 
 ## Upload species richness, spinifex cover and tree health .rds files
@@ -36,15 +34,12 @@ df_spinifex <- read.csv(file = "Data_files/df_spinifex.csv", header = TRUE, sep 
 
 df_oak <- readRDS("Data_files/oak_data_user1.Rds")
 
-
 ```
 
 ## Add plot and frame numbers to each .rds file
 
 ```{r}
-
 # Now we add the plot and information to each frame in the .rds file. This is useful code if you have multiple plots or subplots in a single .rds file. In this example we have only one plot (plot_06_new). A .csv file linking plot ID to frame or .kmz file ID is required
-
 
 # import the csv file 
 df_plot_number <- read.csv(file = "Data_files/Plot_names.csv") 
@@ -77,7 +72,6 @@ df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326)
 df_oak <- st_as_sf(df_oak, wkt = "geometry",crs = 4326) 
 #mapview(df_oak)
 
-
 ```
 
 # Analysis of species distribution and richness data
@@ -85,7 +79,6 @@ df_oak <- st_as_sf(df_oak, wkt = "geometry",crs = 4326)
 ## Clean up the species data (df_species) for mapping and analysis
 
 ```{r}
-
 #View(df_species)
 # create a new species variable 
 df_species$Species_new <- NA
@@ -137,7 +130,6 @@ df_species$Species_new[df_species$Species_new == 'Corymbia_opaca (desert bloodwo
 df_species$Species_new[df_species$Species_new == 'Eucalyptus_gamophylla (blue mallee)'] <-'Eucalyptus_gamophylla'
 
 
-
 # We now Clean up a few more cases. We don't want any data points that contain no species data, unknown species, or species with unclear taxonomy (e.g., Hakea spp.) 
 
 df_species <- subset(df_species, Species_new != "No Mulga present")
@@ -174,6 +166,7 @@ p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, a
         na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_4a.png")
+
 ```
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
@@ -183,7 +176,6 @@ This is useful code to add a buffer around each data point in the dataframe, com
 ### Make buffer around each point and create polygon(s)
 
 ```{r}
-
 # Add a spatial buffer of 25m around each point
 buffer <- st_buffer(df_species_jittered, dist = 50)
 
@@ -194,7 +186,6 @@ polygon <- st_union(buffer)
 
 # export the resulting polygon as a .kml file
 st_write(polygon, "Data_files/buffer_plot_polygon.kml", append= FALSE, driver = "KML")
-
 
 ```
 
@@ -221,7 +212,6 @@ cut_polygon <- polygon_valid %>%
   st_collection_extract("POLYGON")
 
 mapview(cut_polygon)
-
 
 ```
 
@@ -260,6 +250,7 @@ species_div <- result %>%
   summarise(num_species = n_distinct(speciesReorder))
 
 species_div
+
 ```
 
 ### Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
@@ -296,6 +287,7 @@ q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "R
 
 
 mapshot(q, file = "Data_files/Fig_4f.png")
+
 ```
 
 # Analysis of spinifex data
@@ -305,7 +297,6 @@ mapshot(q, file = "Data_files/Fig_4f.png")
 Here we are interested in analysing two variables: the % cover of live and dead material within the 10 m diameter plots.
 
 ```{r}
-
 # ensure variables are numeric
 df_spinifex$live_cover<- as.numeric(df_spinifex$live_cover)
 df_spinifex$dead_cover<- as.numeric(df_spinifex$dead_cover)
@@ -326,12 +317,12 @@ frame_sum <- df_spinifex %>%
 frame_sum$total_cover <- frame_sum$dead_cover+ frame_sum$live_cover 
 
 frame_sum
+
 ```
 
 ## Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d)
 
 ```{r}
-
 # rename the object
 data <- frame_sum  
 
@@ -358,6 +349,7 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_5d.png")
+
 ```
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
@@ -365,9 +357,6 @@ mapshot(q, file = "Data_files/Fig_5d.png")
 ### Re-name spinifex species/size data for size class analysis
 
 ```{r}
-
-
-
 df_spinifex$species[df_spinifex$species == 'No Triodia Present'] <- 'Absent'
 
 df_spinifex$species[df_spinifex$species == 'Triodia pungens  >100cm old fragmentary'] <- 'frag'
@@ -394,13 +383,11 @@ df_spinifex$species[df_spinifex$species == 'Triodia schinzii 50-<100 cm'] <- '50
 
 df_spinifex$species[df_spinifex$species == 'Triodia pungens 400+ cm'] <- '>400'
 
-
 ```
 
 ### Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
 
 ```{r}
-
 # subset spinifex data for only < 50 cm size class
 Less50cm <- subset(df_spinifex, df_spinifex$species == "<50")
  
@@ -422,8 +409,6 @@ mapshot(p, file = "Data_files/Fig_5e.png")
 ### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
 
 ```{r}
-
-
 df_spinifex_full_data <- df_spinifex
 
 
@@ -453,7 +438,6 @@ ggsave("Data_files/Fig_5f.png", width = 6.81, height = 6.45, dpi = 300)
 
 kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 
-
 ```
 
 # Analysis of desert oak crown health data
@@ -471,7 +455,6 @@ df_oak$Taxon <- NA
 df_oak$Size_class <- NA
 df_oak$Burnt <- NA
 df_oak$Count <- NA
-
 
 # we must remove whitespace and other incompatibilities
 
@@ -494,13 +477,11 @@ df_oak$Count <- df_oak_class$Count[match(df_oak$species, df_oak_class$species)]
 
 df_oak$Size_class <- df_oak_class$Size_class[match(df_oak$species, df_oak_class$species)]
 
-
 ```
 
 ### Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
 
 ```{r}
-
 # ensure that the variables are numeric 
 df_oak$dd1 <- as.numeric(df_oak$dd1) 
 df_oak$dd2 <- as.numeric(df_oak$dd2)
@@ -530,9 +511,7 @@ ggsave("Data_files/Fig_6f.png", width = 7.25, height = 6.45, dpi = 300)
 
 
 # test for nonparametric relationship between crown score and burnt + size class 
-scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder,
-                data = df_oak)
-
+scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
 ```
 
@@ -541,7 +520,6 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder,
 ```{r}
 # map burnt and unburnt areas 
 m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
-
 
 mapshot(m, file = "Data_files/Fig_6e.png")
 
@@ -552,8 +530,8 @@ mapshot(m, file = "Data_files/Fig_6e.png")
 ```{r}
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
 
-
 mapshot(p, file = "Data_files/Fig_6c.png")
+
 ```
 
 ### Plot the crown health of mature and early mature size classes (Figure 6d)
@@ -572,6 +550,5 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_6d.png")
-
 
 ```
