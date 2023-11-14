@@ -1,7 +1,7 @@
 ---
 title: "PannotatoR_Examples"
 author: "Anonymised for review"
-format: pdf
+format: html
 editor: visual
 ---
 
@@ -18,6 +18,7 @@ library(RColorBrewer)
 library(rcompanion)
 library(sf)
 library(stringr)
+library(webshot)
 
 ```
 
@@ -164,8 +165,8 @@ df_species_jittered$speciesReorder <- factor(df_species_jittered$Species_new, c(
 p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, alpha.regions = 0.9, layer.name = "Species", col.regions = c("red4","red4", 'red4', "orange", 'yellow3','yellow3', 'yellow2','yellow2','green3','green2','green4', 'deepskyblue2', 'deepskyblue2','purple','white','white'), 
         na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_4a.png")
-
+#mapshot(p, file = "Data_files/Fig_4a.png")
+p
 ```
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
@@ -240,7 +241,7 @@ st_write(cut_polygon_sf, "Data_files/cut_polygon_plot_sf.kml", append= FALSE, dr
 result <- st_join(df_species_jittered, cut_polygon_sf)
 
 # Convert the polygon ID to character 
-as.character(result$id) 
+result$id <- as.character(result$id) 
 
 # Now we calculate the species diversity of each polygon 
 
@@ -283,8 +284,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "Richness", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-
-mapshot(q, file = "Data_files/Fig_4f.png")
+#mapshot(q, file = "Data_files/Fig_4f.png")
+q
 
 ```
 
@@ -334,7 +335,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of live cover 
 p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9,  na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_5c.png")
+print(p)
+#mapshot(p, file = "Data_files/Fig_5c.png")
 
 # Set the mapview options for dead cover
 mapviewOptions(basemaps = c("Esri.WorldImagery"),
@@ -346,7 +348,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of dead cover
 q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_5d.png")
+#mapshot(q, file = "Data_files/Fig_5d.png")
+p
 
 ```
 
@@ -397,8 +400,9 @@ jittered_Less50cm <- st_jitter(Less50cm, amount = 0.0001)
 # Map the variables together - Figure 5D 
 p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(%)", cex = 8, alpha = 0.9, alpha.regions = 0.75, col.regions = colorRampPalette(c("yellow", "orange", 'orange4')), na.rm = TRUE)  + mapview(jittered_Less50cm, zcol = "percentage_cover", cex = 8, alpha = 0.75, alpha.regions = 0.9, col.regions = colorRampPalette(c("lightblue", "blue", 'darkblue')),layer.name = "L50_Cover(%)", na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_5e.png")
-
+#mapshot(p, file = "Data_files/Fig_5e.png")
+p
+ 
 ```
 
 ### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
@@ -488,11 +492,11 @@ df_oak$Size_class_Reorder <- factor(df_oak$Size_class, c("Seedling", "Juvenile",
 # Boxplot of size class and burnt vs crown score
 p <- ggplot(df_oak, aes(x = Size_class_Reorder, y = Crown_score,  z = Burnt, fill = Burnt, color = Burnt )) +
   geom_boxplot() + theme_bw() + theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
-p <- p + scale_fill_manual(values=c("green4","brown3"))
-p <- p + scale_color_manual(values=c("darkgreen","brown4"))
-p + theme_classic()  +
-  theme(panel.border = element_rect(color = "black", fill = NA, size = 2))
+        panel.grid.minor = element_blank()) +
+      scale_fill_manual(values=c("green4","brown3")) +
+      scale_color_manual(values=c("darkgreen","brown4")) +
+      theme_classic()  +
+      theme(panel.border = element_rect(color = "black", fill = NA, size = 2))
 
 p + ggtitle("") +
   xlab("Size class") + ylab("Crown score") +
@@ -511,7 +515,8 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 # Map burnt and unburnt areas 
 m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
 
-mapshot(m, file = "Data_files/Fig_6e.png")
+#mapshot(m, file = "Data_files/Fig_6e.png")
+m
 
 ```
 
@@ -521,7 +526,8 @@ mapshot(m, file = "Data_files/Fig_6e.png")
 # Map size classes 
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_6c.png")
+#mapshot(p, file = "Data_files/Fig_6c.png")
+p
 
 ```
 
@@ -540,6 +546,7 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_6d.png")
+#mapshot(q, file = "Data_files/Fig_6d.png")
+q
 
 ```
