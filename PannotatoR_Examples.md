@@ -429,20 +429,18 @@ p <- ggplot(df_spinifex, aes(x = speciesReorder, y = percentage_cover)) +
   theme(axis.text.x = element_text(size = 14),
         axis.text.y = element_text(size = 14))
 
-p + ggtitle("") +
+p <- p + ggtitle("") +
   xlab("Size class (cm)") + ylab("Pre-drought cover") +
   theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
-```
 
-``` r
 ggsave("Data_files/Fig_5f.png", width = 6.81, height = 6.45, dpi = 300)
 
 # Test for nonparametric relationship between percentage cover and size class
 
 kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
-
-p
 ```
+
+![](Data_files/Fig_5f.png)
 
 # Analysis of desert oak crown health data
 
@@ -505,19 +503,17 @@ p <- ggplot(df_oak, aes(x = Size_class_Reorder, y = Crown_score,  z = Burnt, fil
       theme_classic()  +
       theme(panel.border = element_rect(color = "black", fill = NA, size = 2))
 
-p + ggtitle("") +
+p <- p + ggtitle("") +
   xlab("Size class") + ylab("Crown score") +
   theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
-```
 
-``` r
 ggsave("Data_files/Fig_6f.png", width = 7.25, height = 6.45, dpi = 300)
 
 # Test for nonparametric relationship between crown score and burnt + size class 
 scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
-
-p
 ```
+
+![](Data_files/Fig_6f.png)
 
 ### Map burnt and unburnt tree crowns (image for Figure 6e)
 
