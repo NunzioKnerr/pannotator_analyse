@@ -65,7 +65,7 @@ df_oak <- add_plot_kmz(df_oak)
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Using the geometry field
 df_species <- st_as_sf(df_species, wkt = "geometry",crs = 4326) 
-#mapview(df_species)
+mapview(df_species)
 
 df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326) 
 # mapview(df_spinifex)
@@ -166,9 +166,9 @@ p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, a
         na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_4a.png")
-```
+p
 
-![](Data_files/Fig_4a.png)
+```
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
 
@@ -287,9 +287,9 @@ q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "R
 
 mapshot(q, file = "Data_files/Fig_4f.png")
 
-```
+q
 
-![](Data_files/Fig_4f.png)
+```
 
 # Analysis of spinifex data
 
@@ -337,7 +337,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of live cover 
 p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9,  na.rm = TRUE)
 
-#print(p)
+p
+
 mapshot(p, file = "Data_files/Fig_5c.png")
 
 # Set the mapview options for dead cover
@@ -352,11 +353,8 @@ q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha
 
 mapshot(q, file = "Data_files/Fig_5d.png")
 
+q
 ```
-
-![](Data_files/Fig_5c.png)
-
-![](Data_files/Fig_5d.png)
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
 
@@ -406,10 +404,9 @@ jittered_Less50cm <- st_jitter(Less50cm, amount = 0.0001)
 p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(%)", cex = 8, alpha = 0.9, alpha.regions = 0.75, col.regions = colorRampPalette(c("yellow", "orange", 'orange4')), na.rm = TRUE)  + mapview(jittered_Less50cm, zcol = "percentage_cover", cex = 8, alpha = 0.75, alpha.regions = 0.9, col.regions = colorRampPalette(c("lightblue", "blue", 'darkblue')),layer.name = "L50_Cover(%)", na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_5e.png")
- 
-```
 
-![](Data_files/Fig_5e.png)
+p
+```
 
 ### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
 
@@ -440,9 +437,8 @@ ggsave("Data_files/Fig_5f.png", width = 6.81, height = 6.45, dpi = 300)
 
 kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 
+p
 ```
-
-![](Data_files/Fig_5f.png)
 
 # Analysis of desert oak crown health data
 
@@ -515,9 +511,9 @@ ggsave("Data_files/Fig_6f.png", width = 7.25, height = 6.45, dpi = 300)
 # Test for nonparametric relationship between crown score and burnt + size class 
 scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
-```
+p
 
-![](Data_files/Fig_6f.png)
+```
 
 ### Map burnt and unburnt tree crowns (image for Figure 6e)
 
@@ -527,9 +523,8 @@ m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, 
 
 mapshot(m, file = "Data_files/Fig_6e.png")
 
+m
 ```
-
-![](Data_files/Fig_6e.png)
 
 ### Map the distribution of tree size classes (image for Figure 6c)
 
@@ -538,10 +533,8 @@ mapshot(m, file = "Data_files/Fig_6e.png")
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_6c.png")
-
+p
 ```
-
-![](Data_files/Fig_6c.png)
 
 ### Plot the crown health of mature and early mature size classes (Figure 6d)
 
@@ -559,7 +552,5 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_6d.png")
-
+q
 ```
-
-![](Data_files/Fig_6d.png)

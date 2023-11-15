@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # PannotatoR_Examples
 
 Anonymised for review
@@ -64,8 +58,12 @@ df_oak <- add_plot_kmz(df_oak)
 ``` r
 # Using the geometry field
 df_species <- st_as_sf(df_species, wkt = "geometry",crs = 4326) 
-#mapview(df_species)
+mapview(df_species)
+```
 
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-4-1.png)
+
+``` r
 df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326) 
 # mapview(df_spinifex)
 
@@ -146,8 +144,7 @@ df_species_jittered <- st_jitter(df_species, amount = 0.00001)
 
 ## Map the species distributions (generate image for Figure 4a in paper)
 
-This is useful code for plotting species distributions in mapview,
-including setting colour schemes within a user-specified species order.
+This is useful code for plotting species distributions in mapview, including setting colour schemes within a user-specified species order.
 
 ``` r
 # This code generates Figure 4A 
@@ -164,18 +161,14 @@ p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, a
         na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_4a.png")
+p
 ```
 
-![](Data_files/Fig_4a.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
 
-This is useful code to add a buffer around each data point in the
-dataframe, combined these together if overlapping into a series of
-polygons. The intent is to then split up the polygons according to
-another spatial dataframe, in this case a .kml containing lines that
-divide the west side of the transect into 50 m segments with
-approximately homogeneous vegetation.
+This is useful code to add a buffer around each data point in the dataframe, combined these together if overlapping into a series of polygons. The intent is to then split up the polygons according to another spatial dataframe, in this case a .kml containing lines that divide the west side of the transect into 50 m segments with approximately homogeneous vegetation.
 
 ### Make buffer around each point and create polygon(s)
 
@@ -288,16 +281,17 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "Richness", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_4f.png")
+
+q
 ```
 
-![](Data_files/Fig_4f.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 # Analysis of spinifex data
 
 ## Check the data and correct outliers
 
-Here we are interested in analysing two variables: the % cover of live
-and dead material within the 10 m diameter plots.
+Here we are interested in analysing two variables: the % cover of live and dead material within the 10 m diameter plots.
 
 ``` r
 # Ensure variables are numeric
@@ -338,7 +332,12 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of live cover 
 p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9,  na.rm = TRUE)
 
-#print(p)
+p
+```
+
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-1.png)
+
+``` r
 mapshot(p, file = "Data_files/Fig_5c.png")
 
 # Set the mapview options for dead cover
@@ -352,11 +351,11 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_5d.png")
+
+q
 ```
 
-![](Data_files/Fig_5c.png)
-
-![](Data_files/Fig_5d.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-2.png)
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
 
@@ -405,9 +404,11 @@ jittered_Less50cm <- st_jitter(Less50cm, amount = 0.0001)
 p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(%)", cex = 8, alpha = 0.9, alpha.regions = 0.75, col.regions = colorRampPalette(c("yellow", "orange", 'orange4')), na.rm = TRUE)  + mapview(jittered_Less50cm, zcol = "percentage_cover", cex = 8, alpha = 0.75, alpha.regions = 0.9, col.regions = colorRampPalette(c("lightblue", "blue", 'darkblue')),layer.name = "L50_Cover(%)", na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_5e.png")
+
+p
 ```
 
-![](Data_files/Fig_5e.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
 ### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
 
@@ -439,9 +440,9 @@ ggsave("Data_files/Fig_5f.png", width = 6.81, height = 6.45, dpi = 300)
 # Test for nonparametric relationship between percentage cover and size class
 
 kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
-```
 
-![](Data_files/Fig_5f.png)
+p
+```
 
 # Analysis of desert oak crown health data
 
@@ -514,9 +515,9 @@ ggsave("Data_files/Fig_6f.png", width = 7.25, height = 6.45, dpi = 300)
 
 # Test for nonparametric relationship between crown score and burnt + size class 
 scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
-```
 
-![](Data_files/Fig_6f.png)
+p
+```
 
 ### Map burnt and unburnt tree crowns (image for Figure 6e)
 
@@ -525,9 +526,11 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
 
 mapshot(m, file = "Data_files/Fig_6e.png")
+
+m
 ```
 
-![](Data_files/Fig_6e.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
 ### Map the distribution of tree size classes (image for Figure 6c)
 
@@ -536,9 +539,10 @@ mapshot(m, file = "Data_files/Fig_6e.png")
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_6c.png")
+p
 ```
 
-![](Data_files/Fig_6c.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-19-1.png)
 
 ### Plot the crown health of mature and early mature size classes (Figure 6d)
 
@@ -556,6 +560,7 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_6d.png")
+q
 ```
 
-![](Data_files/Fig_6d.png)
+![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-20-1.png)
