@@ -1,6 +1,8 @@
 ---
-title: "PannotatoR_Examples"
+title: "PannotatoR Examples"
 author: "Anonymised for review"
+toc: true
+number-sections: false
 format: markdown_github
 editor: visual
 ---
@@ -174,7 +176,7 @@ p
 
 This is useful code to add a buffer around each data point in the dataframe, combined these together if overlapping into a series of polygons. The intent is to then split up the polygons according to another spatial dataframe, in this case a .kml containing lines that divide the west side of the transect into 50 m segments with approximately homogeneous vegetation.
 
-### Make buffer around each point and create polygon(s)
+## Make buffer around each point and create polygon(s)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Add a spatial buffer of 25m around each point
@@ -190,7 +192,7 @@ st_write(polygon, "Data_files/buffer_plot_polygon.kml", append= FALSE, driver = 
 
 ```
 
-### Import the .kml file for segmenting the polygon(s) and cut the polygon(s)
+## Import the .kml file for segmenting the polygon(s) and cut the polygon(s)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # This is.kml file that contains lines that cut the westerly side of the study transect into a series of segments roughly 50 m apart. Each segment was oriented to contain homogenous vegetation. It was drawn in Google Earth. 
@@ -216,7 +218,7 @@ mapview(cut_polygon)
 
 ```
 
-### Calculate the species richness in each of the new polygons
+## Calculate the species richness in each of the new polygons
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Now we will calculate the number of species in each polygon segment.We are interested in polygons with IDs.
@@ -254,7 +256,7 @@ species_div
 
 ```
 
-### Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
+## Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # To enable plotting we calculate the centroids of each polygon
@@ -358,7 +360,7 @@ q
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
 
-### Re-name spinifex species/size data for size class analysis
+## Re-name spinifex species/size data for size class analysis
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 df_spinifex$species[df_spinifex$species == 'No Triodia Present'] <- 'Absent'
@@ -387,7 +389,7 @@ df_spinifex$species[df_spinifex$species == 'Triodia pungens 400+ cm'] <- '>400'
 
 ```
 
-### Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
+## Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Subset spinifex data for only < 50 cm size class
@@ -408,7 +410,7 @@ mapshot(p, file = "Data_files/Fig_5e.png")
 p
 ```
 
-### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
+## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 df_spinifex_full_data <- df_spinifex
@@ -443,7 +445,7 @@ kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 
 # Analysis of desert oak crown health data
 
-### Import the lookup csv containing size classes and match to size class data in the df_oak object
+## Import the lookup csv containing size classes and match to size class data in the df_oak object
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # The original df_oak data have been imported in code above 
@@ -480,7 +482,7 @@ df_oak$Size_class <- df_oak_class$Size_class[match(df_oak$species, df_oak_class$
 
 ```
 
-### Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
+## Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Ensure that the variables are numeric 
@@ -516,7 +518,7 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
 ![](Data_files/Fig_6f.png)
 
-### Map burnt and unburnt tree crowns (image for Figure 6e)
+## Map burnt and unburnt tree crowns (image for Figure 6e)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Map burnt and unburnt areas 
@@ -527,7 +529,7 @@ mapshot(m, file = "Data_files/Fig_6e.png")
 m
 ```
 
-### Map the distribution of tree size classes (image for Figure 6c)
+## Map the distribution of tree size classes (image for Figure 6c)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Map size classes 
@@ -537,7 +539,7 @@ mapshot(p, file = "Data_files/Fig_6c.png")
 p
 ```
 
-### Plot the crown health of mature and early mature size classes (Figure 6d)
+## Plot the crown health of mature and early mature size classes (Figure 6d)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Select only mature and early mature size classes 
