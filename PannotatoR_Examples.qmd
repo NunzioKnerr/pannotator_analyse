@@ -24,7 +24,7 @@ library(webshot)
 
 ## Upload species richness, spinifex cover and tree health .rds files
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Read in the .Rds files containing species, spinifex cover and tree crown data
 
 # If you have exported an .Rds file from PannotatoR
@@ -39,7 +39,7 @@ df_oak <- readRDS("Data_files/oak_data_user1.Rds")
 
 ## Add plot and frame numbers to each .rds file
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Now we add the plot and information to each frame in the .rds file. This is useful code if you have multiple plots or subplots in a single .rds file. In this example we have only one plot (plot_06_new). A .csv file linking plot ID to frame or .kmz file ID is required
 
 # Import the csv file 
@@ -62,10 +62,10 @@ df_oak <- add_plot_kmz(df_oak)
 
 ## Map the location of data points in each file
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Using the geometry field
 df_species <- st_as_sf(df_species, wkt = "geometry",crs = 4326) 
-mapview(df_species)
+#mapview(df_species)
 
 df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326) 
 # mapview(df_spinifex)
@@ -79,7 +79,7 @@ df_oak <- st_as_sf(df_oak, wkt = "geometry",crs = 4326)
 
 ## Clean up the species data (df_species) for mapping and analysis
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # View(df_species)
 # Create a new species variable 
 df_species$Species_new <- NA
@@ -151,7 +151,7 @@ df_species_jittered <- st_jitter(df_species, amount = 0.00001)
 
 This is useful code for plotting species distributions in mapview, including setting colour schemes within a user-specified species order.
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # This code generates Figure 4A 
 
 # Confirm the data 
@@ -165,9 +165,10 @@ df_species_jittered$speciesReorder <- factor(df_species_jittered$Species_new, c(
 p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, alpha.regions = 0.9, layer.name = "Species", col.regions = c("red4","red4", 'red4', "orange", 'yellow3','yellow3', 'yellow2','yellow2','green3','green2','green4', 'deepskyblue2', 'deepskyblue2','purple','white','white'), 
         na.rm = TRUE)
 
-#mapshot(p, file = "Data_files/Fig_4a.png")
-p
+mapshot(p, file = "Data_files/Fig_4a.png")
 ```
+
+![](Data_files/Fig_4a.png)
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
 
@@ -175,7 +176,7 @@ This is useful code to add a buffer around each data point in the dataframe, com
 
 ### Make buffer around each point and create polygon(s)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Add a spatial buffer of 25m around each point
 buffer <- st_buffer(df_species_jittered, dist = 50)
 
@@ -191,7 +192,7 @@ st_write(polygon, "Data_files/buffer_plot_polygon.kml", append= FALSE, driver = 
 
 ### Import the .kml file for segmenting the polygon(s) and cut the polygon(s)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # This is.kml file that contains lines that cut the westerly side of the study transect into a series of segments roughly 50 m apart. Each segment was oriented to contain homogenous vegetation. It was drawn in Google Earth. 
 
 segmentation_lines <- st_read("Data_files/polygon_cuts.kml")
@@ -217,7 +218,7 @@ mapview(cut_polygon)
 
 ### Calculate the species richness in each of the new polygons
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Now we will calculate the number of species in each polygon segment.We are interested in polygons with IDs.
 
 # The cut_polygon object is an 'sfc' object and we want to make it an 'sf' object
@@ -255,7 +256,7 @@ species_div
 
 ### Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # To enable plotting we calculate the centroids of each polygon
 average_geometry <- st_centroid(species_div$geometry)
 species_div_centroids <- st_set_geometry(species_div, average_geometry)
@@ -284,10 +285,11 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "Richness", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-#mapshot(q, file = "Data_files/Fig_4f.png")
-q
+mapshot(q, file = "Data_files/Fig_4f.png")
 
 ```
+
+![](Data_files/Fig_4f.png)
 
 # Analysis of spinifex data
 
@@ -295,7 +297,7 @@ q
 
 Here we are interested in analysing two variables: the % cover of live and dead material within the 10 m diameter plots.
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Ensure variables are numeric
 df_spinifex$live_cover<- as.numeric(df_spinifex$live_cover)
 df_spinifex$dead_cover<- as.numeric(df_spinifex$dead_cover)
@@ -321,7 +323,7 @@ frame_sum
 
 ## Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Rename the object
 data <- frame_sum  
 
@@ -335,8 +337,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of live cover 
 p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9,  na.rm = TRUE)
 
-print(p)
-#mapshot(p, file = "Data_files/Fig_5c.png")
+#print(p)
+mapshot(p, file = "Data_files/Fig_5c.png")
 
 # Set the mapview options for dead cover
 mapviewOptions(basemaps = c("Esri.WorldImagery"),
@@ -348,16 +350,19 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of dead cover
 q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-#mapshot(q, file = "Data_files/Fig_5d.png")
-p
+mapshot(q, file = "Data_files/Fig_5d.png")
 
 ```
+
+![](Data_files/Fig_5c.png)
+
+![](Data_files/Fig_5d.png)
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
 
 ### Re-name spinifex species/size data for size class analysis
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 df_spinifex$species[df_spinifex$species == 'No Triodia Present'] <- 'Absent'
 
 df_spinifex$species[df_spinifex$species == 'Triodia pungens  >100cm old fragmentary'] <- 'frag'
@@ -386,7 +391,7 @@ df_spinifex$species[df_spinifex$species == 'Triodia pungens 400+ cm'] <- '>400'
 
 ### Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Subset spinifex data for only < 50 cm size class
 Less50cm <- subset(df_spinifex, df_spinifex$species == "<50")
  
@@ -400,14 +405,15 @@ jittered_Less50cm <- st_jitter(Less50cm, amount = 0.0001)
 # Map the variables together - Figure 5D 
 p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(%)", cex = 8, alpha = 0.9, alpha.regions = 0.75, col.regions = colorRampPalette(c("yellow", "orange", 'orange4')), na.rm = TRUE)  + mapview(jittered_Less50cm, zcol = "percentage_cover", cex = 8, alpha = 0.75, alpha.regions = 0.9, col.regions = colorRampPalette(c("lightblue", "blue", 'darkblue')),layer.name = "L50_Cover(%)", na.rm = TRUE)
 
-#mapshot(p, file = "Data_files/Fig_5e.png")
-p
+mapshot(p, file = "Data_files/Fig_5e.png")
  
 ```
 
+![](Data_files/Fig_5e.png)
+
 ### Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 df_spinifex_full_data <- df_spinifex
 
 df_spinifex <- df_spinifex %>%
@@ -436,11 +442,13 @@ kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 
 ```
 
+![](Data_files/Fig_5f.png)
+
 # Analysis of desert oak crown health data
 
 ### Import the lookup csv containing size classes and match to size class data in the df_oak object
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # The original df_oak data have been imported in code above 
 
 # Import the match table
@@ -477,7 +485,7 @@ df_oak$Size_class <- df_oak_class$Size_class[match(df_oak$species, df_oak_class$
 
 ### Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Ensure that the variables are numeric 
 df_oak$dd1 <- as.numeric(df_oak$dd1) 
 df_oak$dd2 <- as.numeric(df_oak$dd2)
@@ -509,31 +517,35 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
 ```
 
+![](Data_files/Fig_6f.png)
+
 ### Map burnt and unburnt tree crowns (image for Figure 6e)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Map burnt and unburnt areas 
 m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
 
-#mapshot(m, file = "Data_files/Fig_6e.png")
-m
+mapshot(m, file = "Data_files/Fig_6e.png")
 
 ```
+
+![](Data_files/Fig_6e.png)
 
 ### Map the distribution of tree size classes (image for Figure 6c)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Map size classes 
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
 
-#mapshot(p, file = "Data_files/Fig_6c.png")
-p
+mapshot(p, file = "Data_files/Fig_6c.png")
 
 ```
 
+![](Data_files/Fig_6c.png)
+
 ### Plot the crown health of mature and early mature size classes (Figure 6d)
 
-```{r}
+```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Select only mature and early mature size classes 
 
 Mature <- subset(df_oak, df_oak$Size_class == "Mature" | df_oak$Size_class == "Early_mature")
@@ -546,7 +558,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-#mapshot(q, file = "Data_files/Fig_6d.png")
-q
+mapshot(q, file = "Data_files/Fig_6d.png")
 
 ```
+
+![](Data_files/Fig_6d.png)
