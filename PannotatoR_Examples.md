@@ -2,9 +2,36 @@
 
 Anonymised for review
 
-# Data analysis for PannotatoR paper
+-   [Data analysis for PannotatoR paper](#data-analysis-for-pannotator-paper)
+    -   [Install libraries](#install-libraries)
+    -   [Upload species richness, spinifex cover and tree health .rds files](#upload-species-richness-spinifex-cover-and-tree-health-.rds-files)
+    -   [Add plot and frame numbers to each .rds file](#add-plot-and-frame-numbers-to-each-.rds-file)
+    -   [Map the location of data points in each file](#map-the-location-of-data-points-in-each-file)
+-   [Analysis of species distribution and richness data](#analysis-of-species-distribution-and-richness-data)
+    -   [Clean up the species data (df_species) for mapping and analysis](#clean-up-the-species-data-df_species-for-mapping-and-analysis)
+    -   [Map the species distributions (generate image for Figure 4a in paper)](#map-the-species-distributions-generate-image-for-figure-4a-in-paper)
+    -   [Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment](#make-a-25-m-buffer-around-each-plot-create-a-polygon-segment-it-and-calculate-species-diversity-in-each-segment)
+    -   [Make buffer around each point and create polygon(s)](#make-buffer-around-each-point-and-create-polygons)
+    -   [Import the .kml file for segmenting the polygon(s) and cut the polygon(s)](#import-the-.kml-file-for-segmenting-the-polygons-and-cut-the-polygons)
+    -   [Calculate the species richness in each of the new polygons](#calculate-the-species-richness-in-each-of-the-new-polygons)
+    -   [Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)](#plot-the-centroids-of-each-polygon-with-species-richness-of-the-polygon-image-for-figure-4f)
+-   [Analysis of spinifex data](#analysis-of-spinifex-data)
+    -   [Check the data and correct outliers](#check-the-data-and-correct-outliers)
+    -   [Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d)](#map-the-total-cover-of-live-and-dead-cover-within-each-image-frame-images-for-figures-5c-and-5d)
+    -   [Map the cover of different spinifex size classes within each image frame (image for Figure 5e)](#map-the-cover-of-different-spinifex-size-classes-within-each-image-frame-image-for-figure-5e)
+    -   [Re-name spinifex species/size data for size class analysis](#re-name-spinifex-speciessize-data-for-size-class-analysis)
+    -   [Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)](#calculate-and-map-the-cover-and-distribution-of-50cm-and-fragmentary-old-1m-size-classes-image-for-figure-5e)
+    -   [Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)](#create-boxplot-of-size-class-vs-pre-drought-and-post-drought-percentage-cover-with-kruskal-wallis-test-image-for-figure-5f)
+-   [Analysis of desert oak crown health data](#analysis-of-desert-oak-crown-health-data)
+    -   [Import the lookup csv containing size classes and match to size class data in the df_oak object](#import-the-lookup-csv-containing-size-classes-and-match-to-size-class-data-in-the-df_oak-object)
+    -   [Calculate crown health score and compare crown health across size classes (create image for Figure 6f)](#calculate-crown-health-score-and-compare-crown-health-across-size-classes-create-image-for-figure-6f)
+    -   [Map burnt and unburnt tree crowns (image for Figure 6e)](#map-burnt-and-unburnt-tree-crowns-image-for-figure-6e)
+    -   [Map the distribution of tree size classes (image for Figure 6c)](#map-the-distribution-of-tree-size-classes-image-for-figure-6c)
+    -   [Plot the crown health of mature and early mature size classes (Figure 6d)](#plot-the-crown-health-of-mature-and-early-mature-size-classes-figure-6d)
 
-## Install libraries
+# Data analysis for PannotatoR paper {#data-analysis-for-pannotator-paper}
+
+## Install libraries {#install-libraries}
 
 ``` r
 library(dplyr)
@@ -17,7 +44,7 @@ library(stringr)
 library(webshot)
 ```
 
-## Upload species richness, spinifex cover and tree health .rds files
+## Upload species richness, spinifex cover and tree health .rds files {#upload-species-richness-spinifex-cover-and-tree-health-.rds-files}
 
 ``` r
 # Read in the .Rds files containing species, spinifex cover and tree crown data
@@ -31,7 +58,7 @@ df_spinifex <- read.csv(file = "Data_files/df_spinifex.csv", header = TRUE, sep 
 df_oak <- readRDS("Data_files/oak_data_user1.Rds")
 ```
 
-## Add plot and frame numbers to each .rds file
+## Add plot and frame numbers to each .rds file {#add-plot-and-frame-numbers-to-each-.rds-file}
 
 ``` r
 # Now we add the plot and information to each frame in the .rds file. This is useful code if you have multiple plots or subplots in a single .rds file. In this example we have only one plot (plot_06_new). A .csv file linking plot ID to frame or .kmz file ID is required
@@ -53,7 +80,7 @@ df_spinifex <- add_plot_kmz(df_spinifex)
 df_oak <- add_plot_kmz(df_oak)
 ```
 
-## Map the location of data points in each file
+## Map the location of data points in each file {#map-the-location-of-data-points-in-each-file}
 
 ``` r
 # Using the geometry field
@@ -71,9 +98,9 @@ df_oak <- st_as_sf(df_oak, wkt = "geometry",crs = 4326)
 # mapview(df_oak)
 ```
 
-# Analysis of species distribution and richness data
+# Analysis of species distribution and richness data {#analysis-of-species-distribution-and-richness-data}
 
-## Clean up the species data (df_species) for mapping and analysis
+## Clean up the species data (df_species) for mapping and analysis {#clean-up-the-species-data-df_species-for-mapping-and-analysis}
 
 ``` r
 # View(df_species)
@@ -142,7 +169,7 @@ df_species<- df_species[!duplicated_rows, ]
 df_species_jittered <- st_jitter(df_species, amount = 0.00001)
 ```
 
-## Map the species distributions (generate image for Figure 4a in paper)
+## Map the species distributions (generate image for Figure 4a in paper) {#map-the-species-distributions-generate-image-for-figure-4a-in-paper}
 
 This is useful code for plotting species distributions in mapview, including setting colour schemes within a user-specified species order.
 
@@ -166,11 +193,11 @@ p
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
-## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
+## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment {#make-a-25-m-buffer-around-each-plot-create-a-polygon-segment-it-and-calculate-species-diversity-in-each-segment}
 
 This is useful code to add a buffer around each data point in the dataframe, combined these together if overlapping into a series of polygons. The intent is to then split up the polygons according to another spatial dataframe, in this case a .kml containing lines that divide the west side of the transect into 50 m segments with approximately homogeneous vegetation.
 
-## Make buffer around each point and create polygon(s)
+## Make buffer around each point and create polygon(s) {#make-buffer-around-each-point-and-create-polygons}
 
 ``` r
 # Add a spatial buffer of 25m around each point
@@ -185,7 +212,7 @@ polygon <- st_union(buffer)
 st_write(polygon, "Data_files/buffer_plot_polygon.kml", append= FALSE, driver = "KML")
 ```
 
-## Import the .kml file for segmenting the polygon(s) and cut the polygon(s)
+## Import the .kml file for segmenting the polygon(s) and cut the polygon(s) {#import-the-.kml-file-for-segmenting-the-polygons-and-cut-the-polygons}
 
 ``` r
 # This is.kml file that contains lines that cut the westerly side of the study transect into a series of segments roughly 50 m apart. Each segment was oriented to contain homogenous vegetation. It was drawn in Google Earth. 
@@ -212,7 +239,7 @@ mapview(cut_polygon)
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
-## Calculate the species richness in each of the new polygons
+## Calculate the species richness in each of the new polygons {#calculate-the-species-richness-in-each-of-the-new-polygons}
 
 ``` r
 # Now we will calculate the number of species in each polygon segment.We are interested in polygons with IDs.
@@ -249,7 +276,7 @@ species_div <- result %>%
 species_div
 ```
 
-## Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
+## Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f) {#plot-the-centroids-of-each-polygon-with-species-richness-of-the-polygon-image-for-figure-4f}
 
 ``` r
 # To enable plotting we calculate the centroids of each polygon
@@ -287,9 +314,9 @@ q
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
-# Analysis of spinifex data
+# Analysis of spinifex data {#analysis-of-spinifex-data}
 
-## Check the data and correct outliers
+## Check the data and correct outliers {#check-the-data-and-correct-outliers}
 
 Here we are interested in analysing two variables: the % cover of live and dead material within the 10 m diameter plots.
 
@@ -316,7 +343,7 @@ frame_sum$total_cover <- frame_sum$dead_cover+ frame_sum$live_cover
 frame_sum
 ```
 
-## Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d)
+## Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d) {#map-the-total-cover-of-live-and-dead-cover-within-each-image-frame-images-for-figures-5c-and-5d}
 
 ``` r
 # Rename the object
@@ -357,9 +384,9 @@ q
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-2.png)
 
-## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
+## Map the cover of different spinifex size classes within each image frame (image for Figure 5e) {#map-the-cover-of-different-spinifex-size-classes-within-each-image-frame-image-for-figure-5e}
 
-## Re-name spinifex species/size data for size class analysis
+## Re-name spinifex species/size data for size class analysis {#re-name-spinifex-speciessize-data-for-size-class-analysis}
 
 ``` r
 df_spinifex$species[df_spinifex$species == 'No Triodia Present'] <- 'Absent'
@@ -387,7 +414,7 @@ df_spinifex$species[df_spinifex$species == 'Triodia schinzii 50-<100 cm'] <- '50
 df_spinifex$species[df_spinifex$species == 'Triodia pungens 400+ cm'] <- '>400'
 ```
 
-## Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
+## Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e) {#calculate-and-map-the-cover-and-distribution-of-50cm-and-fragmentary-old-1m-size-classes-image-for-figure-5e}
 
 ``` r
 # Subset spinifex data for only < 50 cm size class
@@ -410,7 +437,7 @@ p
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
-## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
+## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f) {#create-boxplot-of-size-class-vs-pre-drought-and-post-drought-percentage-cover-with-kruskal-wallis-test-image-for-figure-5f}
 
 ``` r
 df_spinifex_full_data <- df_spinifex
@@ -442,9 +469,9 @@ kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 
 ![](Data_files/Fig_5f.png)
 
-# Analysis of desert oak crown health data
+# Analysis of desert oak crown health data {#analysis-of-desert-oak-crown-health-data}
 
-## Import the lookup csv containing size classes and match to size class data in the df_oak object
+## Import the lookup csv containing size classes and match to size class data in the df_oak object {#import-the-lookup-csv-containing-size-classes-and-match-to-size-class-data-in-the-df_oak-object}
 
 ``` r
 # The original df_oak data have been imported in code above 
@@ -480,7 +507,7 @@ df_oak$Count <- df_oak_class$Count[match(df_oak$species, df_oak_class$species)]
 df_oak$Size_class <- df_oak_class$Size_class[match(df_oak$species, df_oak_class$species)]
 ```
 
-## Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
+## Calculate crown health score and compare crown health across size classes (create image for Figure 6f) {#calculate-crown-health-score-and-compare-crown-health-across-size-classes-create-image-for-figure-6f}
 
 ``` r
 # Ensure that the variables are numeric 
@@ -515,7 +542,7 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
 ![](Data_files/Fig_6f.png)
 
-## Map burnt and unburnt tree crowns (image for Figure 6e)
+## Map burnt and unburnt tree crowns (image for Figure 6e) {#map-burnt-and-unburnt-tree-crowns-image-for-figure-6e}
 
 ``` r
 # Map burnt and unburnt areas 
@@ -528,7 +555,7 @@ m
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
-## Map the distribution of tree size classes (image for Figure 6c)
+## Map the distribution of tree size classes (image for Figure 6c) {#map-the-distribution-of-tree-size-classes-image-for-figure-6c}
 
 ``` r
 # Map size classes 
@@ -540,7 +567,7 @@ p
 
 ![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-19-1.png)
 
-## Plot the crown health of mature and early mature size classes (Figure 6d)
+## Plot the crown health of mature and early mature size classes (Figure 6d) {#plot-the-crown-health-of-mature-and-early-mature-size-classes-figure-6d}
 
 ``` r
 # Select only mature and early mature size classes 

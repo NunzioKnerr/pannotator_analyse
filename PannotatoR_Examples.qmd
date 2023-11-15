@@ -1,6 +1,8 @@
 ---
 title: "PannotatoR Examples"
 author: "Anonymised for review"
+toc: true
+number-sections: false
 format: markdown_github
 editor: visual
 ---
