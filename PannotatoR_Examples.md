@@ -1,7 +1,7 @@
-# PannotatoR Examples
+# pannotator examples
 Anonymised for review
 
-# Data analysis for PannotatoR paper
+# Data analysis for pannotator paper
 
 ## Install libraries
 
@@ -60,7 +60,7 @@ df_species <- st_as_sf(df_species, wkt = "geometry",crs = 4326)
 mapview(df_species)
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 ``` r
 df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326) 
@@ -141,13 +141,13 @@ df_species<- df_species[!duplicated_rows, ]
 df_species_jittered <- st_jitter(df_species, amount = 0.00001)
 ```
 
-## Map the species distributions (generate image for Figure 4a in paper)
+## Map the species distributions (generate image for Figure 5a in paper)
 
 This is useful code for plotting species distributions in mapview,
 including setting colour schemes within a user-specified species order.
 
 ``` r
-# This code generates Figure 4A 
+# This code generates Figure 5A 
 
 # Confirm the data 
 #mapview(df_species_jittered, zcol = "Species_new", cex = 8, alpha = 0.9) 
@@ -160,11 +160,11 @@ df_species_jittered$speciesReorder <- factor(df_species_jittered$Species_new, c(
 p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, alpha.regions = 0.9, layer.name = "Species", col.regions = c("red4","red4", 'red4', "orange", 'yellow3','yellow3', 'yellow2','yellow2','green3','green2','green4', 'deepskyblue2', 'deepskyblue2','purple','white','white'), 
         na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_4a.png")
+mapshot(p, file = "Data_files/Fig_5a.png")
 p
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
 
@@ -215,7 +215,7 @@ cut_polygon <- polygon_valid %>%
 mapview(cut_polygon)
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 ## Calculate the species richness in each of the new polygons
 
@@ -254,7 +254,7 @@ species_div <- result %>%
 species_div
 ```
 
-## Plot the centroids of each polygon with species richness of the polygon (image for Figure 4f)
+## Plot the centroids of each polygon with species richness of the polygon (image for Figure 5f)
 
 ``` r
 # To enable plotting we calculate the centroids of each polygon
@@ -285,12 +285,12 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "Richness", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_4f.png")
+mapshot(q, file = "Data_files/Fig_5f.png")
 
 q
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 # Analysis of spinifex data
 
@@ -322,7 +322,7 @@ frame_sum$total_cover <- frame_sum$dead_cover+ frame_sum$live_cover
 frame_sum
 ```
 
-## Map the total cover of live and dead cover within each image frame (images for Figures 5c and 5d)
+## Map the total cover of live and dead cover within each image frame (images for Figures 6c and 6d)
 
 ``` r
 # Rename the object
@@ -341,10 +341,10 @@ p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha
 p
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
-mapshot(p, file = "Data_files/Fig_5c.png")
+mapshot(p, file = "Data_files/Fig_6c.png")
 
 # Set the mapview options for dead cover
 mapviewOptions(basemaps = c("Esri.WorldImagery"),
@@ -356,14 +356,14 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of dead cover
 q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_5d.png")
+mapshot(q, file = "Data_files/Fig_6d.png")
 
 q
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-2.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-12-2.png)
 
-## Map the cover of different spinifex size classes within each image frame (image for Figure 5e)
+## Map the cover of different spinifex size classes within each image frame (image for Figure 6e)
 
 ## Re-name spinifex species/size data for size class analysis
 
@@ -393,7 +393,7 @@ df_spinifex$species[df_spinifex$species == 'Triodia schinzii 50-<100 cm'] <- '50
 df_spinifex$species[df_spinifex$species == 'Triodia pungens 400+ cm'] <- '>400'
 ```
 
-## Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 5e)
+## Calculate and map the cover and distribution of \< 50cm and fragmentary (old \> 1m) size classes (image for Figure 6e)
 
 ``` r
 # Subset spinifex data for only < 50 cm size class
@@ -406,17 +406,17 @@ frag <- subset(df_spinifex, df_spinifex$species == "frag")
 jittered_frag <- st_jitter(frag, amount = 0.0001)  
 jittered_Less50cm <- st_jitter(Less50cm, amount = 0.0001)
 
-# Map the variables together - Figure 5D 
+# Map the variables together - Figure 6e
 p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(%)", cex = 8, alpha = 0.9, alpha.regions = 0.75, col.regions = colorRampPalette(c("yellow", "orange", 'orange4')), na.rm = TRUE)  + mapview(jittered_Less50cm, zcol = "percentage_cover", cex = 8, alpha = 0.75, alpha.regions = 0.9, col.regions = colorRampPalette(c("lightblue", "blue", 'darkblue')),layer.name = "L50_Cover(%)", na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_5e.png")
+mapshot(p, file = "Data_files/Fig_6e.png")
 
 p
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
-## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 5f)
+## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 6f)
 
 ``` r
 df_spinifex_full_data <- df_spinifex
@@ -439,14 +439,14 @@ p <- p + ggtitle("") +
   xlab("Size class (cm)") + ylab("Pre-drought cover") +
   theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
 
-ggsave("Data_files/Fig_5f.png", width = 6.81, height = 6.45, dpi = 300)
+ggsave("Data_files/Fig_6f.png", width = 6.81, height = 6.45, dpi = 300)
 
 # Test for nonparametric relationship between percentage cover and size class
 
 kruskal.test(percentage_cover ~ speciesReorder, data = df_spinifex)
 ```
 
-![](Data_files/Fig_5f.png)
+![](Data_files/Fig_6f.png)
 
 # Analysis of desert oak crown health data
 
@@ -486,7 +486,7 @@ df_oak$Count <- df_oak_class$Count[match(df_oak$species, df_oak_class$species)]
 df_oak$Size_class <- df_oak_class$Size_class[match(df_oak$species, df_oak_class$species)]
 ```
 
-## Calculate crown health score and compare crown health across size classes (create image for Figure 6f)
+## Calculate crown health score and compare crown health across size classes (create image for Figure 7f)
 
 ``` r
 # Ensure that the variables are numeric 
@@ -513,40 +513,39 @@ p <- p + ggtitle("") +
   xlab("Size class") + ylab("Crown score") +
   theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
 
-ggsave("Data_files/Fig_6f.png", width = 7.25, height = 6.45, dpi = 300)
+ggsave("Data_files/Fig_7f.png", width = 7.25, height = 6.45, dpi = 300)
 
 # Test for nonparametric relationship between crown score and burnt + size class 
 scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 ```
 
-![](Data_files/Fig_6f.png)
+![](Data_files/Fig_7f.png)
 
-## Map burnt and unburnt tree crowns (image for Figure 6e)
+## Map burnt and unburnt tree crowns (image for Figure 7e)
 
 ``` r
 # Map burnt and unburnt areas 
 m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
 
-mapshot(m, file = "Data_files/Fig_6e.png")
-
+mapshot(m, file = "Data_files/Fig_7e.png")
 m
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-18-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
-## Map the distribution of tree size classes (image for Figure 6c)
+## Map the distribution of tree size classes (image for Figure 7c)
 
 ``` r
 # Map size classes 
-p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#3F704D","yellow", "yellow3", "red2", "red4"),na.rm = TRUE)
+p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#389f0a","yellow", "yellow", "red4", "red4"),na.rm = TRUE)
 
-mapshot(p, file = "Data_files/Fig_6c.png")
+mapshot(p, file = "Data_files/Fig_7c.png")
 p
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-19-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-19-1.png)
 
-## Plot the crown health of mature and early mature size classes (Figure 6d)
+## Plot the crown health of mature and early mature size classes (Figure 7d)
 
 ``` r
 # Select only mature and early mature size classes 
@@ -561,8 +560,8 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_6d.png")
+mapshot(q, file = "Data_files/Fig_7d.png")
 q
 ```
 
-![](PannotatoR_Examples.markdown_github_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](pannotator_examples.markdown_github_files/figure-markdown_github/unnamed-chunk-20-1.png)
