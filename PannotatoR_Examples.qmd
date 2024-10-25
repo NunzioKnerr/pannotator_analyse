@@ -1,13 +1,43 @@
 ---
 title: "pannotator examples"
-author: "Anonymised for review"
-format: markdown_github
 editor: visual
+author:
+  - name: "Nunzio Knerr"
+  - name: "Robert Godfree"
+date: 'today'
+format:
+  html:
+    mainfont: "Calibri"
+    monofont: "Calibri"
+    code-fold: TRUE
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-line-numbers: TRUE
+    embed-resources: FALSE
+    toc: true
+  pdf:
+    pdf-engine: lualatex
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{fvextra}
+        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+    geometry:
+      - top=30mm
+      - left=30mm
+    mainfont: "Calibri"
+    fontsize: 12pt
+    code-line-numbers: TRUE
 ---
 
 # Data analysis for pannotator paper
 
-## Install libraries
+## Load libraries
+
+This code loads in the libraries needed.
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 
@@ -22,7 +52,9 @@ library(webshot)
 
 ```
 
-## Upload species richness, spinifex cover and tree health .rds files
+## Read species richness, spinifex cover and tree health .rds files
+
+This code reads in the .Rds files containing species, spinifex cover and tree crown data.
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Read in the .Rds files containing species, spinifex cover and tree crown data
@@ -38,6 +70,8 @@ df_oak <- readRDS("Data_files/oak_data_user1.Rds")
 ```
 
 ## Add plot and frame numbers to each .rds file
+
+Now we add the plot and information to each frame in the .rds file. This is useful code if you have multiple plots or subplots in a single .rds file. In this example we have only one plot (plot_06_new). A .csv file linking plot ID to frame or .kmz file ID is required.
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Now we add the plot and information to each frame in the .rds file. This is useful code if you have multiple plots or subplots in a single .rds file. In this example we have only one plot (plot_06_new). A .csv file linking plot ID to frame or .kmz file ID is required
@@ -62,18 +96,44 @@ df_oak <- add_plot_kmz(df_oak)
 
 ## Map the location of data points in each file
 
+This code maps the points for a quick look at the data.
+
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Using the geometry field
 df_species <- st_as_sf(df_species, wkt = "geometry",crs = 4326) 
-mapview(df_species)
+s1 <- mapview(df_species)
+
+mapshot(s1, file = "Data_files/species_map.png")
 
 df_spinifex <- st_as_sf(df_spinifex, wkt = "geometry",crs = 4326) 
-# mapview(df_spinifex)
+s2 <- mapview(df_spinifex)
+
+mapshot(s2, file = "Data_files/spinifex_map.png")
 
 df_oak <- st_as_sf(df_oak, wkt = "geometry",crs = 4326) 
-# mapview(df_oak)
+s3 <- mapview(df_oak)
+
+mapshot(s3, file = "Data_files/desertoak_map.png")
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  s1
+  s2
+  s3
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  s1
+  s2
+  s3
+}
 
 ```
+
+::: pdf
+![](Data_files/species_map.png){fig-align="center"} ![](Data_files/spinifex_map.png){fig-align="center"} ![](Data_files/desertoak_map.png){fig-align="center"}
+:::
 
 # Analysis of species distribution and richness data
 
@@ -166,9 +226,23 @@ p <- mapview(df_species_jittered, zcol = "speciesReorder", cex = 5, alpha = 1, a
         na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_5a.png")
-p
+
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
 
 ```
+
+::: pdf
+![](Data_files/Fig_5a.png){fig-align="center"}
+:::
 
 ## Make a 25 m buffer around each plot, create a polygon, segment it and calculate species diversity in each segment
 
@@ -212,9 +286,25 @@ cut_polygon <- polygon_valid %>%
   lwgeom::st_split(lines_valid) %>% 
   st_collection_extract("POLYGON")
 
-mapview(cut_polygon)
+p <- mapview(cut_polygon)
+
+mapshot(p, file = "Data_files/cut_polygon.png")
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
 
 ```
+
+::: pdf
+![](Data_files/cut_polygon.png){fig-align="center"}
+:::
 
 ## Calculate the species richness in each of the new polygons
 
@@ -287,9 +377,21 @@ q <- mapview(species_div_centroids_subset, zcol = "num_species", layer.name = "R
 
 mapshot(q, file = "Data_files/Fig_5f.png")
 
-q
 
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  q
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  q
+}
 ```
+
+::: pdf
+![](Data_files/Fig_5f.png){fig-align="center"}
+:::
 
 # Analysis of spinifex data
 
@@ -337,7 +439,7 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 # Plot of live cover 
 p <- mapview(data, zcol = "live_cover", layer.name = "Cover(%)", cex = 10, alpha = 0.9, alpha.regions = 0.9,  na.rm = TRUE)
 
-p
+#p
 
 mapshot(p, file = "Data_files/Fig_6c.png")
 
@@ -353,8 +455,28 @@ q <- mapview(data, zcol = "dead_cover", layer.name = "Cover(%)", cex = 10, alpha
 
 mapshot(q, file = "Data_files/Fig_6d.png")
 
-q
+#q
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+  
+  q
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+  
+  q
+}
+
+
 ```
+
+::: pdf
+![](Data_files/Fig_6c.png){fig-align="center"} ![](Data_files/Fig_6d.png){fig-align="center"}
+:::
 
 ## Map the cover of different spinifex size classes within each image frame (image for Figure 6e)
 
@@ -405,8 +527,21 @@ p <- mapview(jittered_frag, zcol = "percentage_cover", layer.name = "Frag_Cover(
 
 mapshot(p, file = "Data_files/Fig_6e.png")
 
-p
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
+
 ```
+
+::: pdf
+![](Data_files/Fig_6e.png){fig-align="center"}
+:::
 
 ## Create boxplot of size class vs pre-drought and post-drought percentage cover with kruskal-wallis test (image for Figure 6f)
 
@@ -520,11 +655,25 @@ scheirerRayHare(Crown_score ~ Burnt + Size_class_Reorder, data = df_oak)
 
 ```{r, echo=TRUE, output=FALSE, warning=FALSE}
 # Map burnt and unburnt areas 
-m <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
+p <- mapview(df_oak, zcol = "Burnt", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Burnt", col.regions = c("green2", "red2"), na.rm = TRUE)
 
-mapshot(m, file = "Data_files/Fig_7e.png")
-m
+mapshot(p, file = "Data_files/Fig_7e.png")
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
+
 ```
+
+::: pdf
+![](Data_files/Fig_7e.png){fig-align="center"}
+:::
 
 ## Map the distribution of tree size classes (image for Figure 7c)
 
@@ -533,8 +682,22 @@ m
 p <- mapview(df_oak, zcol = "Size_class_Reorder", cex = 8, alpha = 0.9, alpha.regions = 0.9, layer.name = "Size_class", col.regions = c("#389f0a", "#389f0a","yellow", "yellow", "red4", "red4"),na.rm = TRUE)
 
 mapshot(p, file = "Data_files/Fig_7c.png")
-p
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
+
 ```
+
+::: pdf
+![](Data_files/Fig_7c.png){fig-align="center"}
+:::
 
 ## Plot the crown health of mature and early mature size classes (Figure 7d)
 
@@ -549,8 +712,22 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
                na.color = "gray",
                layers.control.pos = "topright")
 
-q <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
+p <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
 mapshot(q, file = "Data_files/Fig_7d.png")
-q
+
+if (knitr::is_latex_output()) {
+  # This part runs only for PDF output
+} else if (knitr::is_html_output()) {
+  # This part runs only for HTML output
+  p
+} else {
+  # This part runs if neither PDF nor HTML is the target format
+  p
+}
+
 ```
+
+::: pdf
+![](Data_files/Fig_7d.png){fig-align="center"}
+:::
