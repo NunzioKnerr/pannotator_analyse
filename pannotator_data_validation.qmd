@@ -1,6 +1,8 @@
 ---
-title: "Validation of 360-Degree Camera Data"
-author: "Anonymized for review"
+title: "validation of 360-degree camera data"
+author:
+  - name: "Nunzio Knerr"
+  - name: "Robert Godfree"
 editor: visual
 format:
   html:
@@ -10,7 +12,7 @@ format:
     code-summary: "Show the code"
     code-overflow: wrap
     code-line-numbers: TRUE
-    embed-resources: TRUE
+    embed-resources: FALSE
     toc: true
     tbl-colwidths: auto
     tbl-cap-location: top
@@ -19,7 +21,7 @@ format:
   pdf:
     pdf-engine: lualatex
     toc: true
-    toc-depth: 2
+    toc-depth: 3
     number-sections: false
     colorlinks: true
     include-in-header:
@@ -36,7 +38,6 @@ format:
     tbl-cap-location: top
     fig-align: center
     fig-cap-location: top
-  markdown_github: default
 ---
 
 # Validating ecological data extracted from 360-degree images using the pannotator package with field survey data
@@ -45,11 +46,11 @@ This file contains a preliminary assessment of the ability of data extracted fro
 
 Here we focus on three sets of analyses that investigate the reliability and repeatability of key ecological data presented in the paper:
 
-1.  A comparison of plot-level plant species lists constructed from both 360-degree camera images and accompanying field survey data (based on validation plots)
+1.  A comparison of plot-level plant species lists constructed from both 360-degree camera images and accompanying field survey data (based on validation plots),
 
-2.  A comparison of plant cover estimates, again using both 360-degree camera images and field survey data (based on validation plots)
+2.  A comparison of plant cover estimates, again using both 360-degree camera images and field survey data (based on validation plots),
 
-3.  Consistency in the scoring of tree crown health by different users of the pannotator package (based on the main transect)
+3.  Consistency in the scoring of tree crown health by different users of the pannotator package (based on the main transect).
 
 We note that the analyses presented here relate only to the data collected in our study, and that research focusing on different species or systems will likely require different methods for collecting 360-degree images and for calibration. However, based on our results we draw general conclusions relevant to other study systems and provide practical advice for collecting images and calibrating image-based data in the accompanying paper.
 
@@ -566,15 +567,15 @@ Among less common species, morphologically distinct species such as *Eucalyptus 
 
 Overall, plot-level species occurrence data were reliably extracted from camera images in this study. There was a strong relationship between species counts based on field survey and camera survey, albeit with a weak tendency for fewer species to be recorded in the camera survey. On average there was `r round(Mean_agreement["Mean"],0)`% agreement between field survey and camera survey species lists, although we note that the overall species diversity in the study area was relatively low, and apart from the large spinifex grasses (*Triodia* spp.) we did not focus on herbaceous species.
 
-The most common species identified in the field survey but missed in the camera survey was *Triodia schinzii*, and it was not generally possible to distinguish between *Triodia schinzii* and *Triodia pungens*, even less than 5 m from the centre of the plot (i.e., where the photo was taken). However, this is true even under field conditions when plants are lacking floral structures. More species, particularly small taxa, seedlings and plants that retained no leaf material or species that co-occured with morphologically similar taxa were sometimes missed 5 m to 10 m from the plot centre. Overall, however, the most common species or species groups all had a camera detection rate of `r round(min10,2)`%, as did some less common taxa. Occasionally species were recorded in the camera survey but not the field survey, and since all species were perennial, these cases may be classified as field errors.
+The most common species identified in the field survey but missed in the camera survey was *Triodia schinzii*, and it was not generally possible to distinguish between *Triodia schinzii* and *Triodia pungens*, even less than 5 m from the centre of the plot (i.e., where the photo was taken). However, this is true even under field conditions when plants are lacking floral structures. More species, particularly small taxa, seedlings and plants that retained no leaf material or species that co-occured with morphologically similar taxa were sometimes missed 5 m to 10 m from the plot centre. Overall, however, the most common species or species groups all had a camera detection rate of at least `r round(min10,2)`%, as did some less common taxa. Occasionally species were recorded in the camera survey but not the field survey, and since all species were perennial, these cases may be classified as field errors.
 
 #### Collectively, we draw four conclusions from these data:
 
-1.  Camera data can be accurately used to generate plot-level species lists at the study site, although fewer species are missed within 5 m of the plot centre. Common and widespread species were all successfully detectable.
+1.  Camera data can be accurately used to generate plot-level species lists at the study site, although fewer species are missed within 5 m of the plot centre. Common and widespread species were all successfully detectable,
 
-2.  Morphologically distinct species were most easily detectable, and at greater distances from the camera. Morphologically similar species (e.g., spinifex grasses, *Eremophila* spp.) may need to be lumped together for subsequent analyses.
+2.  Morphologically distinct species were most easily detectable, and at greater distances from the camera. Morphologically similar species (e.g., spinifex grasses, *Eremophila* spp.) may need to be lumped together for subsequent analyses,
 
-3.  Reference photographs, ideally taken at different distances from the camera, should be provided for all target species to assist with species identification using the pannotator package.
+3.  Reference photographs, ideally taken at different distances from the camera, should be provided for all target species to assist with species identification using the pannotator package,
 
 4.  The resolution of the current GoPro Max model may require collection of images closer to certain target taxa. This may involve, for example, collecting images closer to the ground (understory species), in the canopy (morphologically similar canopy taxa), and at multiple levels in both (structurally complex vegetation).
 
@@ -1169,7 +1170,7 @@ s3mean <- summary(scorer_3$Crown_score)
 #print(s3mean)
 ```
 
-These data indicate that crown health scores were similar for scorers 1 (`r round(s1mean["Mean"],3)`) and 2 (`r round(s2mean["Mean"],3)`) but and about 0.1 units higher for scorer 3 (`r round(s3mean["Mean"],3)`), mainly due to a lack of low-scoring trees. Scores for pole- and mature-sized trees were generally consistent across the three scorers, although again scores provided by scorer 3 tended to be higher than those provided by the other scorers. Scores differed in seedling and juvenile classes, although the number of individuals used to determine these scores varied significantly. Data provided by scorer 1 indicated that smaller seedlings (\<1 m tall) needed to separated from juveniles (1- 4 m tall), and that a greater range of visual examples of all size classes was required in the help files. Incorporation of these changes greatly improved the agreement across size classes by scorers 2 and 3.
+These data indicate that crown health scores were similar for scorers 1 (`r round(s1mean["Mean"],3)`) and 2 (`r round(s2mean["Mean"],3)`) but about 0.1 units higher for scorer 3 (`r round(s3mean["Mean"],3)`), mainly due to a lack of low-scoring trees. Scores for pole- and mature-sized trees were generally consistent across the three scorers, although again scores provided by scorer 3 tended to be higher than those provided by the other scorers. Scores differed in seedling and juvenile classes, although the number of individuals used to determine these scores varied significantly. Data provided by scorer 1 indicated that smaller seedlings (\<1 m tall) needed to be separated from juveniles (1- 4 m tall), and that a greater range of visual examples of all size classes was required in the help files. Incorporation of these changes greatly improved the agreement across size classes by scorers 2 and 3.
 
 Now we want to determine whether the spatial structure of size class and crown health data differed significantly among scorers. Maps are visualised using mapview and images saved using the 'mapshot' function.
 
@@ -1308,6 +1309,6 @@ Comparison of desert oak size class and crown health scores for 3 scorers. Examp
 
 ### Conclusions : tree crown and size class estimation using 360-degree cameras
 
-The data presented here indicate that all scorers generally produced broadly similar mean crown scores across the whole transect (0.48-0.62) and across size classes. They also produced a comparable spatial distribution for these variables, with similar patches of low crown health identified by each of the scorers (right panels above). The majority of desert oaks with low crown health occurred in parts of the transect that had been recently burnt in hot fires, although there were a few isolated patches that may have been caused by drought (e.g., near the dunes in the north of the western transect; top right panel abo). These results indicate that collection and analysis of 360-degree images can be a useful method for mapping differences in crown health and then using these data to infer the role of different drivers of crown health at small to large spatial scales.
+The data presented here indicate that all scorers generally produced broadly similar mean crown scores across the whole transect (0.48-0.62) and across size classes. They also produced a comparable spatial distribution for these variables, with similar patches of low crown health identified by each of the scorers (right panels above). The majority of desert oaks with low crown health occurred in parts of the transect that had been recently burnt in hot fires, although there were a few isolated patches that may have been caused by drought (e.g., near the dunes in the north of the western transect; top right panel above). These results indicate that collection and analysis of 360-degree images can be a useful method for mapping differences in crown health and then using these data to infer the role of different drivers of crown health at small to large spatial scales.
 
 Scoring consistency was improved by providing enhanced help material to identify different size classes, splitting smaller trees into 'seedling' and 'juvenile' size classes, and providing more representative images of the crown health scoring protocol (including the assessable crown (*AC*), the crown extent (*CE*), and the crown density (*CD).* Inter-scorer variation is a common problem in studies that rely on semi-quantitative or qualitative scales, and these would benefit from developing a set of scores by multiple scorers for a common set of images. The pannotator package makes this a simple process, as shown in this example.
