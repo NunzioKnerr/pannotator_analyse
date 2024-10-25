@@ -1,19 +1,19 @@
 ---
 title: "README"
 output: md_document
-date: "2024-05-16"
+date: "today"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## A Package for Annotating Panospheric (360-degree) Images in R - Example Files
+## Pannotator Analyse
 
-This repository contains:
+This repository contains examples and data validation files for pannotator
 
-1.  The full code required to generate related panels and analyses presented the accompanying paper. To use it please clone the repository and then open the project pannotator_examples_gituhb.Rproj in RStudio. All code is provided in the associated pannotator_examples.qmd file (quarto must be installed). All data files required are provided in the Data_file folder.\
-  
+1.  The full code required to generate related panels and analyses presented the accompanying paper. To use it please clone the repository and then open the project pannotator_analyse.Rproj in RStudio. All code is provided in the associated pannotator_examples.qmd file (quarto must be installed). All data files required are provided in the Data_file folder.\
 
 2.  The complete data validation study files including Supporting Information 3. All code is provided in the associated pannotator_data_validation.qmd file (quarto must be installed). All data files required are provided in the Data_file folder.\
-   
+
+3.  A web version of these files can be viewed [here](https://nunzioknerr.github.io/pannotator_analyse/)
