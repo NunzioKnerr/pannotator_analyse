@@ -12,7 +12,7 @@ pannotator
 
 2.  Code is provided for the data validation study presented in the
     accompanying paper (Godfree & Knerr, Methods in Ecology & Evolution,
-    in press) which includes Supporting Information 3. . Please open the
+    in press) which includes Supporting Information 3. Please open the
     pannotator\_data\_validation.qmd file (quarto must be installed).
     All data files required are provided in the Data\_files folder.  
 
