@@ -3,6 +3,7 @@ title: "validation of 360-degree camera data"
 author:
   - name: "Nunzio Knerr"
   - name: "Robert Godfree"
+date: 'today'
 editor: visual
 format:
   html:
