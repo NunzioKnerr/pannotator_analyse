@@ -1,10 +1,10 @@
 ---
 title: "pannotator examples"
-editor: visual
 author:
   - name: "Nunzio Knerr"
   - name: "Robert Godfree"
 date: 'today'
+editor: visual
 format:
   html:
     mainfont: "Calibri"
@@ -731,3 +731,4 @@ if (knitr::is_latex_output()) {
 ::: pdf
 ![](Data_files/Fig_7d.png){fig-align="center"}
 :::
+
