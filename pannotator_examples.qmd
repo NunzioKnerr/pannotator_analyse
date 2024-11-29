@@ -714,7 +714,7 @@ mapviewOptions(basemaps = c("Esri.WorldImagery"),
 
 p <- mapview(df_oak, zcol = "Crown_score", layer.name = "Crown_score", cex = 8, alpha = 0.9, alpha.regions = 0.9, na.rm = TRUE)
 
-mapshot(q, file = "Data_files/Fig_7d.png")
+mapshot(p, file = "Data_files/Fig_7d.png")
 
 if (knitr::is_latex_output()) {
   # This part runs only for PDF output
@@ -731,4 +731,3 @@ if (knitr::is_latex_output()) {
 ::: pdf
 ![](Data_files/Fig_7d.png){fig-align="center"}
 :::
-
