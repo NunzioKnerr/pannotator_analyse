@@ -5,8 +5,7 @@ pannotator
 
 1.  The code presented generates panels and analyses presented in the
     accompanying paper (Godfree & Knerr, Methods in Ecology & Evolution,
-    in press). To use it please clone the repository and then open the
-    project pannotator\_analyse.Rproj in RStudio. Please open the
+    in press) which includes Supporting Information 7. Please open the
     pannotator\_examples.qmd file (quarto must be installed). All data
     files required are provided in the Data\_files folder.  
 
